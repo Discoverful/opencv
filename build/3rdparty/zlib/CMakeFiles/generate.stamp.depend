@@ -1,0 +1,15 @@
+# CMake generation dependency list for this directory.
+C:/Users/Haitao/Projects/OpenCV/3rdparty/zlib/CMakeLists.txt
+d:/bin/cmake/share/cmake-2.8/Modules/CheckFunctionExists.cmake
+d:/bin/cmake/share/cmake-2.8/Modules/CheckIncludeFile.cmake
+d:/bin/cmake/share/cmake-2.8/Modules/CheckCSourceCompiles.cmake
+d:/bin/cmake/share/cmake-2.8/Modules/CheckTypeSize.cmake
+d:/bin/cmake/share/cmake-2.8/Modules/CheckIncludeFile.cmake
+d:/bin/cmake/share/cmake-2.8/Modules/CheckFunctionExists.c
+d:/bin/cmake/share/cmake-2.8/Modules/CheckIncludeFile.c.in
+d:/bin/cmake/share/cmake-2.8/Modules/CheckIncludeFile.c.in
+d:/bin/cmake/share/cmake-2.8/Modules/CheckIncludeFile.c.in
+d:/bin/cmake/share/cmake-2.8/Modules/CheckIncludeFile.c.in
+d:/bin/cmake/share/cmake-2.8/Modules/CheckTypeSize.c.in
+C:/Users/Haitao/Projects/OpenCV/build2/CMakeFiles/CheckTypeSize/OFF64_T.c
+C:/Users/Haitao/Projects/OpenCV/3rdparty/zlib/zconf.h.cmakein

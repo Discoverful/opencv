@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{D5011C64-7AA3-4CF8-A2E8-CC512EAA1224}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>opencv_perf_tests</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+d:\bin\cmake\bin\cmake.exe -H.. -B. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Haitao/Projects/OpenCV/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVMinDepVersions.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeVS12FindMake.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\Users\Haitao\Projects\OpenCV\build\CMakeFiles\2.8.12.1\CMakeSystem.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;d:\bin\cmake\share\cmake-2.8\Modules\CMakeClDeps.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Haitao\Projects\OpenCV\build\CMakeFiles\2.8.12.1\CMakeCXXCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;d:\bin\cmake\share\cmake-2.8\Modules\CMakeClDeps.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Haitao\Projects\OpenCV\build\CMakeFiles\2.8.12.1\CMakeCCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;d:\bin\cmake\share\cmake-2.8\Modules\Platform\Windows.cmake;d:\bin\cmake\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;d:\bin\cmake\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;d:\bin\cmake\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\Users\Haitao\Projects\OpenCV\build\CMakeFiles\2.8.12.1\CMakeRCCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeRCInformation.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Haitao\Projects\OpenCV\build\CMakeFiles\2.8.12.1\CMakeCXXCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCInformation.cmake;d:\bin\cmake\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;d:\bin\cmake\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCCompilerABI.c;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Haitao\Projects\OpenCV\build\CMakeFiles\2.8.12.1\CMakeCCompiler.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVUtils.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVDetectCXXCompiler.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVVersion.cmake;C:\Users\Haitao\Projects\OpenCV\modules\core\include\opencv2\core\version.hpp;d:\bin\cmake\share\cmake-2.8\Modules\FindGit.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageMessage.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVCompilerOptions.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVCRTLinkage.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\checks\winrttest.cpp;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVPCHSupport.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVModule.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVFindLibsGrfmt.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVFindWebP.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVFindLibsGUI.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\checks\win32uitest.cpp;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVFindLibsVideo.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\checks\vfwtest.cpp;C:\Users\Haitao\Projects\OpenCV\3rdparty\ffmpeg\ffmpeg_version.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVFindLibsPerf.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVDetectCUDA.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\FindCUDA.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageMessage.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVFindLATEX.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVDetectPython.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPythonInterp.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageMessage.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPythonInterp.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageMessage.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVDetectApacheAnt.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindJNI.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageMessage.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVDetectOpenCL.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\checks\opencl.cpp;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVDetectDirectX.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\checks\directx.cpp;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVFindMatlab.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVDetectVTK.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVExtraTargets.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\templates\cmake_uninstall.cmake.in;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVGenHeaders.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\templates\cvconfig.h.in;C:\Users\Haitao\Projects\OpenCV\cmake\templates\opencv_modules.hpp.in;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVGenPkgconfig.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\templates\opencv-XXX.pc.in;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVGenAndroidMK.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVGenConfig.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\templates\OpenCVConfig.cmake.in;C:\Users\Haitao\Projects\OpenCV\cmake\templates\OpenCVConfig-version.cmake.in;C:\Users\Haitao\Projects\OpenCV\cmake\templates\OpenCVConfig.cmake.in;C:\Users\Haitao\Projects\OpenCV\cmake\templates\OpenCVConfig-version.cmake.in;C:\Users\Haitao\Projects\OpenCV\cmake\templates\OpenCVConfig.cmake.in;C:\Users\Haitao\Projects\OpenCV\cmake\templates\OpenCVConfig-version.cmake.in;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVGenInfoPlist.cmake;C:\Users\Haitao\Projects\OpenCV\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Haitao\Projects\OpenCV\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+d:\bin\cmake\bin\cmake.exe -H.. -B. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Haitao/Projects/OpenCV/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVMinDepVersions.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeVS12FindMake.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\Users\Haitao\Projects\OpenCV\build\CMakeFiles\2.8.12.1\CMakeSystem.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;d:\bin\cmake\share\cmake-2.8\Modules\CMakeClDeps.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Haitao\Projects\OpenCV\build\CMakeFiles\2.8.12.1\CMakeCXXCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;d:\bin\cmake\share\cmake-2.8\Modules\CMakeClDeps.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Haitao\Projects\OpenCV\build\CMakeFiles\2.8.12.1\CMakeCCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;d:\bin\cmake\share\cmake-2.8\Modules\Platform\Windows.cmake;d:\bin\cmake\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;d:\bin\cmake\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;d:\bin\cmake\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\Users\Haitao\Projects\OpenCV\build\CMakeFiles\2.8.12.1\CMakeRCCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeRCInformation.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Haitao\Projects\OpenCV\build\CMakeFiles\2.8.12.1\CMakeCXXCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCInformation.cmake;d:\bin\cmake\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;d:\bin\cmake\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCCompilerABI.c;d:\bin\cmake\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Haitao\Projects\OpenCV\build\CMakeFiles\2.8.12.1\CMakeCCompiler.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVUtils.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVDetectCXXCompiler.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVVersion.cmake;C:\Users\Haitao\Projects\OpenCV\modules\core\include\opencv2\core\version.hpp;d:\bin\cmake\share\cmake-2.8\Modules\FindGit.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageMessage.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVCompilerOptions.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVCRTLinkage.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\checks\winrttest.cpp;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVPCHSupport.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVModule.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVFindLibsGrfmt.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVFindWebP.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVFindLibsGUI.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\checks\win32uitest.cpp;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVFindLibsVideo.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\checks\vfwtest.cpp;C:\Users\Haitao\Projects\OpenCV\3rdparty\ffmpeg\ffmpeg_version.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVFindLibsPerf.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVDetectCUDA.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\FindCUDA.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageMessage.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVFindLATEX.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVDetectPython.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPythonInterp.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageMessage.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPythonInterp.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageMessage.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVDetectApacheAnt.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindJNI.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;d:\bin\cmake\share\cmake-2.8\Modules\FindPackageMessage.cmake;d:\bin\cmake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVDetectOpenCL.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\checks\opencl.cpp;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVDetectDirectX.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\checks\directx.cpp;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVFindMatlab.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVDetectVTK.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVExtraTargets.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\templates\cmake_uninstall.cmake.in;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVGenHeaders.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\templates\cvconfig.h.in;C:\Users\Haitao\Projects\OpenCV\cmake\templates\opencv_modules.hpp.in;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVGenPkgconfig.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\templates\opencv-XXX.pc.in;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVGenAndroidMK.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVGenConfig.cmake;C:\Users\Haitao\Projects\OpenCV\cmake\templates\OpenCVConfig.cmake.in;C:\Users\Haitao\Projects\OpenCV\cmake\templates\OpenCVConfig-version.cmake.in;C:\Users\Haitao\Projects\OpenCV\cmake\templates\OpenCVConfig.cmake.in;C:\Users\Haitao\Projects\OpenCV\cmake\templates\OpenCVConfig-version.cmake.in;C:\Users\Haitao\Projects\OpenCV\cmake\templates\OpenCVConfig.cmake.in;C:\Users\Haitao\Projects\OpenCV\cmake\templates\OpenCVConfig-version.cmake.in;C:\Users\Haitao\Projects\OpenCV\cmake\OpenCVGenInfoPlist.cmake;C:\Users\Haitao\Projects\OpenCV\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Haitao\Projects\OpenCV\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\494d8e08e4d4f7810f2c78bfee3e2180\opencv_perf_tests.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/494d8e08e4d4f7810f2c78bfee3e2180/opencv_perf_tests.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Haitao\Projects\OpenCV\build\CMakeFiles\opencv_perf_tests</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/494d8e08e4d4f7810f2c78bfee3e2180/opencv_perf_tests.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Haitao\Projects\OpenCV\build\CMakeFiles\opencv_perf_tests</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\opencv_perf_tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/calib3d/opencv_perf_calib3d.vcxproj">
+      <Project>FD8C2726-E7A3-48D7-A5BB-5A71F1A66B92</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/core/opencv_perf_core.vcxproj">
+      <Project>47ADB18B-2C08-42D2-9175-86A100A8D0F8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/cuda/opencv_perf_cuda.vcxproj">
+      <Project>29719F6F-6342-43EE-82BC-E2C61710D7AD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/cudaarithm/opencv_perf_cudaarithm.vcxproj">
+      <Project>20552221-1A9A-4830-B97C-6BBFBF4A6027</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/cudabgsegm/opencv_perf_cudabgsegm.vcxproj">
+      <Project>4C6D0A3C-1987-47F2-8A9B-F33D37A343A2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/cudacodec/opencv_perf_cudacodec.vcxproj">
+      <Project>C5D86E88-A77B-4353-8800-B38EC861B888</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/cudafeatures2d/opencv_perf_cudafeatures2d.vcxproj">
+      <Project>AE2EE1E8-1D88-41D5-90E5-3AB3EE678B18</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/cudafilters/opencv_perf_cudafilters.vcxproj">
+      <Project>CC0BC0B1-B5D2-4822-90E4-FAAAB792308F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/cudaimgproc/opencv_perf_cudaimgproc.vcxproj">
+      <Project>4CB8316A-D9A3-429D-917C-5A734AE1C51E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/cudaoptflow/opencv_perf_cudaoptflow.vcxproj">
+      <Project>289270A8-BDE0-4313-A738-6E004062A06F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/cudastereo/opencv_perf_cudastereo.vcxproj">
+      <Project>370DFA01-36E7-426F-8405-D2F9BCC69FE6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/cudawarping/opencv_perf_cudawarping.vcxproj">
+      <Project>516BA08D-99B3-4DA7-ABF1-201035C7B73D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/features2d/opencv_perf_features2d.vcxproj">
+      <Project>65A2FA8C-C92E-42C3-B556-74B253A674C5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/highgui/opencv_perf_highgui.vcxproj">
+      <Project>9E99100A-3BC6-49BB-84C5-F9735C46C525</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/imgproc/opencv_perf_imgproc.vcxproj">
+      <Project>3A87D2EC-ABB9-4791-ADEF-9E0827051B3A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/nonfree/opencv_perf_nonfree.vcxproj">
+      <Project>5FE7EBB7-7887-4F9E-A223-76EE86ED9AD9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/objdetect/opencv_perf_objdetect.vcxproj">
+      <Project>DD3C1D8C-2B10-4190-B888-DA0AA23C3312</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/ocl/opencv_perf_ocl.vcxproj">
+      <Project>30AE3F91-76B2-477A-97E9-5DE4BD564752</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/photo/opencv_perf_photo.vcxproj">
+      <Project>3EBF12AE-A97E-42DD-9C54-CF135BC28CD6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/softcascade/opencv_perf_softcascade.vcxproj">
+      <Project>9DAE8E9B-035D-4635-BB9F-4E68C4A7E6EA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/stitching/opencv_perf_stitching.vcxproj">
+      <Project>9D03086F-ED97-4E9B-8CC3-C8843B265E13</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/superres/opencv_perf_superres.vcxproj">
+      <Project>A1F7696A-46DA-4E04-BD4A-46B6CAAD7007</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/video/opencv_perf_video.vcxproj">
+      <Project>04A46D63-86E6-4142-BE82-49E8ACCFCB5A</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

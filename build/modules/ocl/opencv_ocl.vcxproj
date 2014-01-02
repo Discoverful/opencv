@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{6E110583-A7EB-4DC9-89A5-5294A7663612}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>opencv_ocl</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Haitao\Projects\OpenCV\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opencv_ocl.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opencv_ocl300d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Haitao\Projects\OpenCV\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opencv_ocl.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opencv_ocl300</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/ocl/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/ocl/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/modules/objdetect/include;C:/Users/Haitao/Projects/OpenCV/modules/ml/include;C:/Users/Haitao/Projects/OpenCV/modules/calib3d/include;C:/Users/Haitao/Projects/OpenCV/modules/features2d/include;C:/Users/Haitao/Projects/OpenCV/modules/flann/include;C:/Users/Haitao/Projects/OpenCV/build/modules/ocl;C:/Users/Haitao/Projects/OpenCV/modules/ocl/src;C:/Users/Haitao/Projects/OpenCV/modules/ocl/test;C:/Users/Haitao/Projects/OpenCV/3rdparty/include/opencl/1.2;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForcedIncludeFiles>C:/Users/Haitao/Projects/OpenCV/modules/ocl/src/precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Users/Haitao/Projects/OpenCV/modules/ocl/src/precomp.hpp</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WINAPI_FAMILY=WINAPI_FAMILY_APP;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR="Debug";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WINAPI_FAMILY=WINAPI_FAMILY_APP;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR=\"Debug\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/ocl/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/ocl/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/modules/objdetect/include;C:/Users/Haitao/Projects/OpenCV/modules/ml/include;C:/Users/Haitao/Projects/OpenCV/modules/calib3d/include;C:/Users/Haitao/Projects/OpenCV/modules/features2d/include;C:/Users/Haitao/Projects/OpenCV/modules/flann/include;C:/Users/Haitao/Projects/OpenCV/build/modules/ocl;C:/Users/Haitao/Projects/OpenCV/modules/ocl/src;C:/Users/Haitao/Projects/OpenCV/modules/ocl/test;C:/Users/Haitao/Projects/OpenCV/3rdparty/include/opencl/1.2;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/ocl/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/ocl/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/modules/objdetect/include;C:/Users/Haitao/Projects/OpenCV/modules/ml/include;C:/Users/Haitao/Projects/OpenCV/modules/calib3d/include;C:/Users/Haitao/Projects/OpenCV/modules/features2d/include;C:/Users/Haitao/Projects/OpenCV/modules/flann/include;C:/Users/Haitao/Projects/OpenCV/build/modules/ocl;C:/Users/Haitao/Projects/OpenCV/modules/ocl/src;C:/Users/Haitao/Projects/OpenCV/modules/ocl/test;C:/Users/Haitao/Projects/OpenCV/3rdparty/include/opencl/1.2;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>..\..\lib\Debug\opencv_core300d.lib;..\..\lib\Debug\opencv_flann300d.lib;..\..\lib\Debug\opencv_imgproc300d.lib;..\..\lib\Debug\opencv_highgui300d.lib;..\..\lib\Debug\opencv_features2d300d.lib;..\..\lib\Debug\opencv_calib3d300d.lib;..\..\lib\Debug\opencv_ml300d.lib;..\..\lib\Debug\opencv_objdetect300d.lib;..\..\lib\Debug\opencv_video300d.lib;..\..\lib\Debug\opencv_features2d300d.lib;..\..\lib\Debug\opencv_flann300d.lib;..\..\lib\Debug\opencv_highgui300d.lib;..\..\lib\Debug\opencv_ml300d.lib;..\..\lib\Debug\opencv_imgproc300d.lib;..\..\lib\Debug\opencv_core300d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libc</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Haitao/Projects/OpenCV/build/lib/Debug/opencv_ocl300d.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Haitao/Projects/OpenCV/build/bin/Debug/opencv_ocl300d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/ocl/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/ocl/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/modules/objdetect/include;C:/Users/Haitao/Projects/OpenCV/modules/ml/include;C:/Users/Haitao/Projects/OpenCV/modules/calib3d/include;C:/Users/Haitao/Projects/OpenCV/modules/features2d/include;C:/Users/Haitao/Projects/OpenCV/modules/flann/include;C:/Users/Haitao/Projects/OpenCV/build/modules/ocl;C:/Users/Haitao/Projects/OpenCV/modules/ocl/src;C:/Users/Haitao/Projects/OpenCV/modules/ocl/test;C:/Users/Haitao/Projects/OpenCV/3rdparty/include/opencl/1.2;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForcedIncludeFiles>C:/Users/Haitao/Projects/OpenCV/modules/ocl/src/precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Users/Haitao/Projects/OpenCV/modules/ocl/src/precomp.hpp</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WINAPI_FAMILY=WINAPI_FAMILY_APP;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR="Release";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WINAPI_FAMILY=WINAPI_FAMILY_APP;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR=\"Release\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/ocl/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/ocl/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/modules/objdetect/include;C:/Users/Haitao/Projects/OpenCV/modules/ml/include;C:/Users/Haitao/Projects/OpenCV/modules/calib3d/include;C:/Users/Haitao/Projects/OpenCV/modules/features2d/include;C:/Users/Haitao/Projects/OpenCV/modules/flann/include;C:/Users/Haitao/Projects/OpenCV/build/modules/ocl;C:/Users/Haitao/Projects/OpenCV/modules/ocl/src;C:/Users/Haitao/Projects/OpenCV/modules/ocl/test;C:/Users/Haitao/Projects/OpenCV/3rdparty/include/opencl/1.2;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/ocl/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/ocl/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/modules/objdetect/include;C:/Users/Haitao/Projects/OpenCV/modules/ml/include;C:/Users/Haitao/Projects/OpenCV/modules/calib3d/include;C:/Users/Haitao/Projects/OpenCV/modules/features2d/include;C:/Users/Haitao/Projects/OpenCV/modules/flann/include;C:/Users/Haitao/Projects/OpenCV/build/modules/ocl;C:/Users/Haitao/Projects/OpenCV/modules/ocl/src;C:/Users/Haitao/Projects/OpenCV/modules/ocl/test;C:/Users/Haitao/Projects/OpenCV/3rdparty/include/opencl/1.2;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>..\..\lib\Release\opencv_core300.lib;..\..\lib\Release\opencv_flann300.lib;..\..\lib\Release\opencv_imgproc300.lib;..\..\lib\Release\opencv_highgui300.lib;..\..\lib\Release\opencv_features2d300.lib;..\..\lib\Release\opencv_calib3d300.lib;..\..\lib\Release\opencv_ml300.lib;..\..\lib\Release\opencv_objdetect300.lib;..\..\lib\Release\opencv_video300.lib;..\..\lib\Release\opencv_features2d300.lib;..\..\lib\Release\opencv_flann300.lib;..\..\lib\Release\opencv_highgui300.lib;..\..\lib\Release\opencv_ml300.lib;..\..\lib\Release\opencv_imgproc300.lib;..\..\lib\Release\opencv_core300.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libc</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Haitao/Projects/OpenCV/build/lib/Release/opencv_ocl300.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Haitao/Projects/OpenCV/build/bin/Release/opencv_ocl300.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\modules\ocl\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/ocl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\ocl\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Haitao/Projects/OpenCV/modules/ocl/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\ocl\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\ocl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Haitao\Projects\OpenCV\build\modules\ocl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/ocl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\ocl\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Haitao/Projects/OpenCV/modules/ocl/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\ocl\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\ocl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Haitao\Projects\OpenCV\build\modules\ocl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\4ca471ed906d93b18429d9d764b340d4\opencl_kernels.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating opencl_kernels.cpp, opencl_kernels.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+d:\bin\cmake\bin\cmake.exe -DMODULE_NAME="ocl" -DCL_DIR="C:/Users/Haitao/Projects/OpenCV/modules/ocl/src/opencl" -DOUTPUT="C:/Users/Haitao/Projects/OpenCV/build/modules/ocl/opencl_kernels.cpp" -P C:/Users/Haitao/Projects/OpenCV/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/4ca471ed906d93b18429d9d764b340d4/opencl_kernels.cpp.rule;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_absdiff_nonsaturate.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_add.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_addWeighted.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_add_mask.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_add_scalar.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_add_scalar_mask.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_bitwise_binary.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_bitwise_binary_mask.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_bitwise_binary_scalar.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_bitwise_binary_scalar_mask.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_bitwise_not.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_cartToPolar.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_compare.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_exp.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_flip.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_log.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_LUT.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_magnitude.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_minMax.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_minMaxLoc.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_minMaxLoc_mask.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_nonzero.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_phase.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_polarToCart.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_pow.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_setidentity.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_sqrt.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_sum.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_transpose.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\bgfg_mog.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\blend_linear.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\brute_force_match.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\build_warps.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\convertC3C4.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\cvt_color.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\featdetect_fast.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\filtering_adaptive_bilateral.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\filtering_boxFilter.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\filtering_filter2D.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\filtering_morph.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\filtering_sep_filter_singlepass.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\filter_sep_col.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\filter_sep_row.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\haarobjectdetect.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\haarobjectdetect_scaled2.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_bilateral.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_calcHarris.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_calcMinEigenVal.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_canny.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_clahe.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_columnsum.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_convolve.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_copymakeboder.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_gftt.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_histogram.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_hough.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_integral.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_integral_sum.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_median.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_mulAndScaleSpectrums.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_remap.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_resize.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_sobel3.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_threshold.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_warpAffine.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_warpPerspective.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\interpolate_frames.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\kernel_radix_sort_by_key.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\kernel_sort_by_key.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\kernel_stablesort_by_key.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\kmeans_kernel.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\knearest.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\match_template.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\meanShift.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\merge_mat.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\moments.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\objdetect_hog.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\operator_convertTo.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\operator_copyToM.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\operator_setTo.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\operator_setToM.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\optical_flow_farneback.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\orb.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\pyrlk.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\pyr_down.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\pyr_up.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\split_mat.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\stereobm.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\stereobp.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\stereocsbp.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\svm.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\tvl1flow.cl;C:\Users\Haitao\Projects\OpenCV\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Haitao\Projects\OpenCV\build\modules\ocl\opencl_kernels.cpp;C:\Users\Haitao\Projects\OpenCV\build\modules\ocl\opencl_kernels.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating opencl_kernels.cpp, opencl_kernels.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+d:\bin\cmake\bin\cmake.exe -DMODULE_NAME="ocl" -DCL_DIR="C:/Users/Haitao/Projects/OpenCV/modules/ocl/src/opencl" -DOUTPUT="C:/Users/Haitao/Projects/OpenCV/build/modules/ocl/opencl_kernels.cpp" -P C:/Users/Haitao/Projects/OpenCV/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/4ca471ed906d93b18429d9d764b340d4/opencl_kernels.cpp.rule;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_absdiff_nonsaturate.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_add.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_addWeighted.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_add_mask.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_add_scalar.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_add_scalar_mask.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_bitwise_binary.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_bitwise_binary_mask.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_bitwise_binary_scalar.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_bitwise_binary_scalar_mask.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_bitwise_not.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_cartToPolar.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_compare.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_exp.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_flip.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_log.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_LUT.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_magnitude.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_minMax.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_minMaxLoc.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_minMaxLoc_mask.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_nonzero.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_phase.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_polarToCart.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_pow.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_setidentity.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_sqrt.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_sum.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\arithm_transpose.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\bgfg_mog.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\blend_linear.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\brute_force_match.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\build_warps.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\convertC3C4.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\cvt_color.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\featdetect_fast.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\filtering_adaptive_bilateral.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\filtering_boxFilter.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\filtering_filter2D.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\filtering_morph.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\filtering_sep_filter_singlepass.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\filter_sep_col.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\filter_sep_row.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\haarobjectdetect.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\haarobjectdetect_scaled2.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_bilateral.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_calcHarris.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_calcMinEigenVal.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_canny.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_clahe.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_columnsum.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_convolve.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_copymakeboder.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_gftt.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_histogram.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_hough.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_integral.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_integral_sum.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_median.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_mulAndScaleSpectrums.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_remap.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_resize.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_sobel3.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_threshold.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_warpAffine.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\imgproc_warpPerspective.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\interpolate_frames.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\kernel_radix_sort_by_key.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\kernel_sort_by_key.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\kernel_stablesort_by_key.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\kmeans_kernel.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\knearest.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\match_template.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\meanShift.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\merge_mat.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\moments.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\objdetect_hog.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\operator_convertTo.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\operator_copyToM.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\operator_setTo.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\operator_setToM.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\optical_flow_farneback.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\orb.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\pyrlk.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\pyr_down.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\pyr_up.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\split_mat.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\stereobm.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\stereobp.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\stereocsbp.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\svm.cl;C:\Users\Haitao\Projects\OpenCV\modules\ocl\src\opencl\tvl1flow.cl;C:\Users\Haitao\Projects\OpenCV\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Haitao\Projects\OpenCV\build\modules\ocl\opencl_kernels.cpp;C:\Users\Haitao\Projects\OpenCV\build\modules\ocl\opencl_kernels.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\modules\ocl\include\opencv2\ocl.hpp" />
+    <ClInclude Include="..\..\..\modules\ocl\include\opencv2\ocl\matrix_operations.hpp" />
+    <ClInclude Include="..\..\..\modules\ocl\include\opencv2\ocl\ocl.hpp" />
+    <ClInclude Include="opencl_kernels.hpp" />
+    <ClInclude Include="..\..\..\modules\ocl\src\cl_programcache.hpp" />
+    <ClInclude Include="..\..\..\modules\ocl\src\precomp.hpp" />
+    <ClInclude Include="..\..\..\modules\ocl\src\safe_call.hpp" />
+    <ClInclude Include="..\..\cvconfig.h" />
+    <ClInclude Include="..\..\opencv2\opencv_modules.hpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\arithm.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\bgfg_mog.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\blend.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\brute_force_matcher.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\build_warps.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\canny.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\cl_context.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\cl_operations.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\cl_programcache.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\color.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\columnsum.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\error.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\fast.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\fft.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\filtering.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\gemm.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\gftt.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\haar.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\hog.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\hough.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\imgproc.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\interpolate_frames.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\kalman.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\kmeans.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\knearest.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\match_template.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\matrix_operations.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\mcwutil.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\moments.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\mssegmentation.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\optical_flow_farneback.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\orb.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\pyrdown.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\pyrlk.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\pyrup.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\sort_by_key.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\split_merge.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\stereobm.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\stereobp.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\stereo_csbp.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\svm.cpp" />
+    <ClCompile Include="..\..\..\modules\ocl\src\tvl1flow.cpp" />
+    <ClCompile Include="opencl_kernels.cpp" />
+    <ClCompile Include="opencv_ocl_pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Haitao/Projects/OpenCV/modules/ocl/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Haitao/Projects/OpenCV/modules/ocl/src/precomp.hpp</PrecompiledHeaderFile>
+    </ClCompile>
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_absdiff_nonsaturate.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_add.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_addWeighted.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_add_mask.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_add_scalar.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_add_scalar_mask.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_bitwise_binary.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_bitwise_binary_mask.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_bitwise_binary_scalar.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_bitwise_binary_scalar_mask.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_bitwise_not.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_cartToPolar.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_compare.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_exp.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_flip.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_log.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_LUT.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_magnitude.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_minMax.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_minMaxLoc.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_minMaxLoc_mask.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_nonzero.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_phase.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_polarToCart.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_pow.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_setidentity.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_sqrt.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_sum.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\arithm_transpose.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\bgfg_mog.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\blend_linear.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\brute_force_match.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\build_warps.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\convertC3C4.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\cvt_color.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\featdetect_fast.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\filtering_adaptive_bilateral.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\filtering_boxFilter.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\filtering_filter2D.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\filtering_morph.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\filtering_sep_filter_singlepass.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\filter_sep_col.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\filter_sep_row.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\haarobjectdetect.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\haarobjectdetect_scaled2.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_bilateral.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_calcHarris.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_calcMinEigenVal.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_canny.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_clahe.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_columnsum.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_convolve.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_copymakeboder.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_gftt.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_histogram.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_hough.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_integral.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_integral_sum.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_median.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_mulAndScaleSpectrums.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_remap.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_resize.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_sobel3.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_threshold.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_warpAffine.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\imgproc_warpPerspective.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\interpolate_frames.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\kernel_radix_sort_by_key.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\kernel_sort_by_key.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\kernel_stablesort_by_key.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\kmeans_kernel.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\knearest.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\match_template.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\meanShift.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\merge_mat.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\moments.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\objdetect_hog.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\operator_convertTo.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\operator_copyToM.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\operator_setTo.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\operator_setToM.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\optical_flow_farneback.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\orb.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\pyrlk.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\pyr_down.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\pyr_up.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\split_mat.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\stereobm.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\stereobp.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\stereocsbp.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\svm.cl" />
+    <None Include="..\..\..\modules\ocl\src\opencl\tvl1flow.cl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/calib3d/opencv_calib3d.vcxproj">
+      <Project>775288F3-AAD5-4AFB-8E83-4DE21830309C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/core/opencv_core.vcxproj">
+      <Project>5B9B9E5F-EC6F-4E37-8F3E-DED15CFFAEAF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/features2d/opencv_features2d.vcxproj">
+      <Project>F6081E75-1DE0-4111-8F47-9315501017AC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/flann/opencv_flann.vcxproj">
+      <Project>C912C367-FA00-4A84-875A-5CF53999600A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/highgui/opencv_highgui.vcxproj">
+      <Project>152C5018-3292-4ADF-8992-B144B7CA7504</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/imgproc/opencv_imgproc.vcxproj">
+      <Project>16EF83FC-A100-4D69-8D52-5D0C8BBF573B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/ml/opencv_ml.vcxproj">
+      <Project>13D1AFF1-2D7D-41B0-8F58-F8F7D4F93971</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/objdetect/opencv_objdetect.vcxproj">
+      <Project>25147852-1406-4424-9C5C-34222EF2E9FA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/video/opencv_video.vcxproj">
+      <Project>09CEC7CA-6179-4451-9A0A-4F9FAFF7B873</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

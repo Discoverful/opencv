@@ -642,6 +642,11 @@ static void* initOpenCLAndLoad(const char* funcname)
 
 static void* initOpenCLAndLoad(const char* funcname)
 {
+    UNREFERENCED_PARAMETER(funcname);
+
+    return NULL;
+
+#if 0
     static bool initialized = false;
     static HMODULE handle = 0;
     if (!handle)
@@ -657,6 +662,7 @@ static void* initOpenCLAndLoad(const char* funcname)
     }
 
     return funcname ? (void*)GetProcAddress(handle, funcname) : 0;
+#endif
 }
 
 #elif defined(__linux)
@@ -1975,7 +1981,7 @@ static cl_device_id selectOpenCLDevice()
     std::string platform;
     std::vector<std::string> deviceTypes;
     std::string deviceName;
-    const char* configuration = getenv("OPENCV_OPENCL_DEVICE");
+    const char* configuration = NULL; // getenv("OPENCV_OPENCL_DEVICE");
     if (configuration)
     {
         if (!parseOpenCLDeviceConfiguration(std::string(configuration), platform, deviceTypes, deviceName))

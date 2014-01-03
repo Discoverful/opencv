@@ -56,10 +56,12 @@
 /* #undef HAVE_DC1394_2 */
 
 /* DirectX */
+/*
 #define HAVE_DIRECTX
 #define HAVE_D3D11
 #define HAVE_D3D10
 #define HAVE_D3D9
+*/
 
 /* DirectShow Video Capture library */
 #define HAVE_DSHOW
@@ -113,7 +115,7 @@
 /* #undef HAVE_NVCUVID */
 
 /* OpenCL Support */
-#define HAVE_OPENCL
+/* #define HAVE_OPENCL */
 /* #undef HAVE_OPENCL_STATIC */
 
 /* OpenEXR codec */
@@ -160,6 +162,7 @@
 
 /* Windows Runtime support */
 /* #undef HAVE_WINRT */
+#define HAVE_WINRT
 
 /* XIMEA camera support */
 /* #undef HAVE_XIMEA */
@@ -170,3 +173,7 @@
 /* Define to 1 if your processor stores words with the most significant byte
    first (like Motorola and SPARC, unlike Intel and VAX). */
 /* #undef WORDS_BIGENDIAN */
+
+#define _WIN32_WINNT _WIN32_WINNT_WIN8
+#define WINAPI_FAMILY WINAPI_FAMILY_PHONE_APP
+

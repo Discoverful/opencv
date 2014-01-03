@@ -53,7 +53,6 @@ namespace {
 std::string
 errorString ()
 {
-    LPSTR messageBuffer;
     DWORD bufferLength;
     std::string message;
 
@@ -62,20 +61,23 @@ errorString ()
     // text to be acquired from the system.
     //
 
-    if (bufferLength = FormatMessageA (FORMAT_MESSAGE_ALLOCATE_BUFFER |
-                       FORMAT_MESSAGE_IGNORE_INSERTS |
-                       FORMAT_MESSAGE_FROM_SYSTEM,
-                       0,
-                       GetLastError (),
-                       MAKELANGID (LANG_NEUTRAL,
-                           SUBLANG_DEFAULT),
-                       (LPSTR) &messageBuffer,
-                       0,
-                       NULL))
-    {
-    message = messageBuffer;
-        LocalFree (messageBuffer);
-    }
+    bufferLength = FormatMessageA (FORMAT_MESSAGE_IGNORE_INSERTS | FORMAT_MESSAGE_FROM_SYSTEM,
+                                   0,
+                                   GetLastError (),
+                                   MAKELANGID (LANG_NEUTRAL, SUBLANG_DEFAULT),
+                                   NULL,
+                                   0,
+                                   NULL);
+
+    message.resize(bufferLength);
+
+    FormatMessageA (FORMAT_MESSAGE_IGNORE_INSERTS | FORMAT_MESSAGE_FROM_SYSTEM,
+                    0,
+                    GetLastError (),
+                    MAKELANGID (LANG_NEUTRAL, SUBLANG_DEFAULT),
+                    (LPSTR)message.c_str(),
+                    0,
+                    NULL);
 
     return message;
 }
@@ -85,7 +87,7 @@ errorString ()
 
 Semaphore::Semaphore (unsigned int value)
 {
-    if ((_semaphore = ::CreateSemaphore (0, value, 0x7fffffff, 0)) == 0)
+    if ((_semaphore = ::CreateSemaphoreEx (0, value, 0x7fffffff, 0, 0, EVENT_ALL_ACCESS)) == 0)
     {
     THROW (LogicExc, "Could not create semaphore "
              "(" << errorString() << ").");
@@ -103,7 +105,7 @@ Semaphore::~Semaphore()
 void
 Semaphore::wait()
 {
-    if (::WaitForSingleObject (_semaphore, INFINITE) != WAIT_OBJECT_0)
+    if (::WaitForSingleObjectEx (_semaphore, INFINITE, FALSE) != WAIT_OBJECT_0)
     {
     THROW (LogicExc, "Could not wait on semaphore "
              "(" << errorString() << ").");
@@ -114,7 +116,7 @@ Semaphore::wait()
 bool
 Semaphore::tryWait()
 {
-    return ::WaitForSingleObject (_semaphore, 0) == WAIT_OBJECT_0;
+    return ::WaitForSingleObjectEx (_semaphore, 0, FALSE) == WAIT_OBJECT_0;
 }
 
 

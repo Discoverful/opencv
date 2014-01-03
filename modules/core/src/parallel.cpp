@@ -70,7 +70,7 @@
 #endif
 
 #if defined _MSC_VER && _MSC_VER >= 1600
-    #define HAVE_CONCURRENCY
+//  #define HAVE_CONCURRENCY
 #endif
 
 /* IMPORTANT: always use the same order of defines

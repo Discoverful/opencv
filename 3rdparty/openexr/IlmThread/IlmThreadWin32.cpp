@@ -58,8 +58,10 @@ namespace {
 unsigned __stdcall
 threadLoop (void * t)
 {
+#if 0
     reinterpret_cast<Thread*>(t)->run();
     _endthreadex (0);
+#endif
     return 0;
 }
 
@@ -74,21 +76,25 @@ Thread::Thread ()
 
 Thread::~Thread ()
 {
-    DWORD status = ::WaitForSingleObject (_thread, INFINITE);
+#if 0
+    DWORD status = ::WaitForSingleObjectEx (_thread, INFINITE, FALSE);
     assert (status ==  WAIT_OBJECT_0);
     bool ok = ::CloseHandle (_thread) != FALSE;
     assert (ok);
+#endif
 }
 
 
 void
 Thread::start ()
 {
+#if 0
     unsigned id;
     _thread = (HANDLE)::_beginthreadex (0, 0, &threadLoop, this, 0, &id);
 
     if (_thread == 0)
     Iex::throwErrnoExc ("Cannot create new thread (%T).");
+#endif
 }
 
 

@@ -46,7 +46,7 @@ namespace IlmThread {
 
 Mutex::Mutex ()
 {
-    ::InitializeCriticalSection (&_mutex);
+    ::InitializeCriticalSectionEx(&_mutex, 1500, 0);
 }
 
 

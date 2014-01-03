@@ -62,7 +62,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <string>
 
 #ifdef HAVE_TEGRA_OPTIMIZATION
 #include "opencv2/core/core_tegra.hpp"

@@ -450,7 +450,7 @@ static int tsErrorCallback( int status, const char* func_name, const char* err_m
 
 void TS::init( const string& modulename )
 {
-    char* datapath_dir = getenv("OPENCV_TEST_DATA_PATH");
+    char* datapath_dir = NULL; // getenv("OPENCV_TEST_DATA_PATH");
 
     if( datapath_dir )
     {

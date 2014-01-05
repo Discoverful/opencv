@@ -2925,7 +2925,7 @@ inline const char* StrNCpy(char* dest, const char* src, size_t n) {
 // defined there.
 
 #if !GTEST_OS_WINDOWS_MOBILE
-inline int ChDir(const char* dir) { return chdir(dir); }
+inline int ChDir(const char* dir) { return 0;} //chdir(dir);
 #endif
 inline FILE* FOpen(const char* path, const char* mode) {
   return fopen(path, mode);
@@ -2957,7 +2957,7 @@ inline const char* GetEnv(const char* name) {
   const char* const env = getenv(name);
   return (env != NULL && env[0] != '\0') ? env : NULL;
 #else
-  return getenv(name);
+  return NULL; // getenv(name);
 #endif
 }
 

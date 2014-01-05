@@ -309,7 +309,7 @@ static bool selectOpenCLDevice()
     std::string platform;
     std::vector<std::string> deviceTypes;
     std::string deviceName;
-    const char* configuration = getenv("OPENCV_OPENCL_DEVICE");
+    const char* configuration = NULL; // getenv("OPENCV_OPENCL_DEVICE");
     if (configuration)
     {
         if (!parseOpenCLDeviceConfiguration(std::string(configuration), platform, deviceTypes, deviceName))

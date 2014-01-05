@@ -41,7 +41,7 @@
 
 #include "precomp.hpp"
 
-#include <vfw.h>
+// #include <vfw.h>
 
 #ifdef __GNUC__
 #define WM_CAP_FIRSTA              (WM_USER)
@@ -53,6 +53,7 @@
 #pragma warning(disable: 4748)
 #endif
 
+#if 0
 /********************* Capturing video from AVI via VFW ************************/
 
 static BITMAPINFOHEADER icvBitmapHeader( int width, int height, int bpp, int compression = BI_RGB )
@@ -296,17 +297,23 @@ bool CvCaptureAVI_VFW::setProperty( int property_id, double value )
 
     return true;
 }
+#endif
 
 CvCapture* cvCreateFileCapture_VFW (const char* filename)
 {
+    UNREFERENCED_PARAMETER(filename);
+    return NULL;
+
+#if 0
     CvCaptureAVI_VFW* capture = new CvCaptureAVI_VFW;
     if( capture->open(filename) )
         return capture;
     delete capture;
     return 0;
+#endif
 }
 
-
+#if 0
 /********************* Capturing video from camera via VFW *********************/
 
 class CvCaptureCAM_VFW : public CvCapture
@@ -527,9 +534,14 @@ double CvCaptureCAM_VFW::getProperty( int property_id )
     return 0;
 }
 
+#endif
 
 CvCapture* cvCreateCameraCapture_VFW( int index )
 {
+    UNREFERENCED_PARAMETER(index);
+    return NULL;
+
+#if 0
     CvCaptureCAM_VFW* capture = new CvCaptureCAM_VFW;
 
     if( capture->open( index ))
@@ -537,8 +549,10 @@ CvCapture* cvCreateCameraCapture_VFW( int index )
 
     delete capture;
     return 0;
+#endif
 }
 
+#if 0
 
 /*************************** writing AVIs ******************************/
 
@@ -711,13 +725,20 @@ bool CvVideoWriter_VFW::writeFrame( const IplImage* image )
 
     return result;
 }
+#endif
 
 CvVideoWriter* cvCreateVideoWriter_VFW( const char* filename, int fourcc,
                                         double fps, CvSize frameSize, int isColor )
 {
+    UNREFERENCED_PARAMETER(filename, fourcc, fps, frameSize, isColor);
+    return NULL;
+
+#if 0
     CvVideoWriter_VFW* writer = new CvVideoWriter_VFW;
     if( writer->open( filename, fourcc, fps, frameSize, isColor != 0 ))
         return writer;
     delete writer;
     return 0;
+
+#endif
 }

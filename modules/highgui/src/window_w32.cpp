@@ -62,7 +62,7 @@
 #  pragma GCC diagnostic ignored "-Wmissing-declarations"
 #endif
 
-#include <commctrl.h>
+// #include <commctrl.h>
 #include <winuser.h>
 #include <stdlib.h>
 #include <string.h>
@@ -104,6 +104,8 @@ static const char* trackbar_text =
 #define CV_HBRBACKGROUND GCL_HBRBACKGROUND
 
 #endif
+
+#if 0
 
 static void FillBitmapInfo( BITMAPINFO* bmi, int width, int height, int bpp, int origin )
 {
@@ -223,15 +225,20 @@ static HINSTANCE hg_hinstance = 0;
 static const char* highGUIclassName = "HighGUI class";
 static const char* mainHighGUIclassName = "Main HighGUI class";
 
+#endif
+
+#if 0
 static void icvCleanupHighgui()
 {
     cvDestroyAllWindows();
     UnregisterClass(highGUIclassName, hg_hinstance);
     UnregisterClass(mainHighGUIclassName, hg_hinstance);
 }
+#endif
 
 CV_IMPL int cvInitSystem( int, char** )
 {
+#if 0
     static int wasInitialized = 0;
 
     // check initialization status
@@ -265,7 +272,7 @@ CV_IMPL int cvInitSystem( int, char** )
 
         wasInitialized = 1;
     }
-
+#endif
     return 0;
 }
 
@@ -273,6 +280,7 @@ CV_IMPL int cvStartWindowThread(){
     return 0;
 }
 
+#if 0
 static CvWindow* icvFindWindowByName( const char* name )
 {
     CvWindow* window = hg_windows;
@@ -407,8 +415,13 @@ icvSaveWindowPos( const char* name, CvRect rect )
     RegCloseKey(hkey);
 }
 
+#endif
+
 double cvGetModeWindow_W32(const char* name)//YV
 {
+    UNREFERENCED_PARAMETER(name);
+    return 0;
+#if 0
     double result = -1;
 
     CV_FUNCNAME( "cvGetModeWindow_W32" );
@@ -428,10 +441,15 @@ double cvGetModeWindow_W32(const char* name)//YV
 
     __END__;
     return result;
+
+#endif
 }
 
 void cvSetModeWindow_W32( const char* name, double prop_value)//Yannick Verdie
 {
+    UNREFERENCED_PARAMETER(name);
+    UNREFERENCED_PARAMETER(prop_value);
+#if 0
     CV_FUNCNAME( "cvSetModeWindow_W32" );
 
     __BEGIN__;
@@ -492,10 +510,14 @@ void cvSetModeWindow_W32( const char* name, double prop_value)//Yannick Verdie
     }
 
     __END__;
+#endif
 }
 
 double cvGetPropWindowAutoSize_W32(const char* name)
 {
+    UNREFERENCED_PARAMETER(name);
+    return 0;
+#if 0
     double result = -1;
 
     CV_FUNCNAME( "cvSetCloseCallback" );
@@ -516,10 +538,14 @@ double cvGetPropWindowAutoSize_W32(const char* name)
     __END__;
 
     return result;
+#endif
 }
 
 double cvGetRatioWindow_W32(const char* name)
 {
+    UNREFERENCED_PARAMETER(name);
+    return 0;
+#if 0
     double result = -1;
 
     CV_FUNCNAME( "cvGetRatioWindow_W32" );
@@ -540,10 +566,14 @@ double cvGetRatioWindow_W32(const char* name)
     __END__;
 
     return result;
+#endif
 }
 
 double cvGetOpenGlProp_W32(const char* name)
 {
+    UNREFERENCED_PARAMETER(name);
+    return 0;
+#if 0
     double result = -1;
 
 #ifdef HAVE_OPENGL
@@ -567,9 +597,10 @@ double cvGetOpenGlProp_W32(const char* name)
     (void)name;
 
     return result;
+#endif
 }
 
-
+#if 0
 // OpenGL support
 
 #ifdef HAVE_OPENGL
@@ -691,9 +722,14 @@ namespace
 
 #endif // HAVE_OPENGL
 
+#endif
 
 CV_IMPL int cvNamedWindow( const char* name, int flags )
 {
+    UNREFERENCED_PARAMETER(name);
+    UNREFERENCED_PARAMETER(flags);
+    return 0;
+#if 0
     int result = 0;
     CV_FUNCNAME( "cvNamedWindow" );
 
@@ -808,8 +844,10 @@ CV_IMPL int cvNamedWindow( const char* name, int flags )
     __END__;
 
     return result;
+#endif
 }
 
+#if 0
 #ifdef HAVE_OPENGL
 
 CV_IMPL void cvSetOpenGlContext(const char* name)
@@ -936,9 +974,12 @@ static void icvRemoveWindow( CvWindow* window )
     cvFree( &window );
 }
 
+#endif
 
 CV_IMPL void cvDestroyWindow( const char* name )
 {
+    UNREFERENCED_PARAMETER(name);
+#if 0
     CV_FUNCNAME( "cvDestroyWindow" );
 
     __BEGIN__;
@@ -960,9 +1001,10 @@ CV_IMPL void cvDestroyWindow( const char* name )
     // Do NOT call _remove_window -- CvWindow list will be updated automatically ...
 
     __END__;
+#endif
 }
 
-
+#if 0
 static void icvScreenToClient( HWND hwnd, RECT* rect )
 {
     POINT p;
@@ -999,7 +1041,8 @@ static RECT icvCalcWindowRect( CvWindow* window )
     return rect;
 }
 
-// returns TRUE if there is a problem such as ERROR_IO_PENDING.
+// returns TRUE if there is a problem such cvcreatecameracapture
+ERROR_IO_PENDING.
 static bool icvGetBitmapData( CvWindow* window, SIZE* size, int* channels, void** data )
 {
     BITMAP bmp;
@@ -1064,9 +1107,14 @@ static void icvUpdateWindowPos( CvWindow* window )
                rect.bottom - rect.top + 1, TRUE );
 }
 
+#endif
+
 CV_IMPL void
 cvShowImage( const char* name, const CvArr* arr )
 {
+    UNREFERENCED_PARAMETER(name);
+    UNREFERENCED_PARAMETER(arr);
+#if 0
     CV_FUNCNAME( "cvShowImage" );
 
     __BEGIN__;
@@ -1143,6 +1191,7 @@ cvShowImage( const char* name, const CvArr* arr )
 //    UpdateWindow(window->hwnd);
 
     __END__;
+#endif
 }
 
 #if 0
@@ -1227,6 +1276,10 @@ cvShowImageHWND(HWND w_hWnd, const CvArr* arr)
 
 CV_IMPL void cvResizeWindow(const char* name, int width, int height )
 {
+    UNREFERENCED_PARAMETER(name);
+    UNREFERENCED_PARAMETER(width);
+    UNREFERENCED_PARAMETER(height);
+#if 0
     CV_FUNCNAME( "cvResizeWindow" );
 
     __BEGIN__;
@@ -1262,11 +1315,15 @@ CV_IMPL void cvResizeWindow(const char* name, int width, int height )
         rect.right - rect.left + 1, rect.bottom - rect.top + 1, TRUE);
 
     __END__;
+#endif
 }
-
 
 CV_IMPL void cvMoveWindow( const char* name, int x, int y )
 {
+    UNREFERENCED_PARAMETER(name);
+    UNREFERENCED_PARAMETER(x);
+    UNREFERENCED_PARAMETER(y);
+#if 0
     CV_FUNCNAME( "cvMoveWindow" );
 
     __BEGIN__;
@@ -1285,9 +1342,10 @@ CV_IMPL void cvMoveWindow( const char* name, int x, int y )
     MoveWindow( window->frame, x, y, rect.right - rect.left, rect.bottom - rect.top, TRUE);
 
     __END__;
+#endif
 }
 
-
+#if 0
 static LRESULT CALLBACK
 MainWindowProc( HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam )
 {
@@ -1693,11 +1751,12 @@ static LRESULT CALLBACK HGToolbarProc( HWND hwnd, UINT uMsg, WPARAM wParam, LPAR
 
     return CallWindowProc(window->toolbar.toolBarProc, hwnd, uMsg, wParam, lParam);
 }
-
+#endif
 
 CV_IMPL void
 cvDestroyAllWindows(void)
 {
+#if 0
     CvWindow* window = hg_windows;
 
     while( window )
@@ -1709,12 +1768,15 @@ cvDestroyAllWindows(void)
         SendMessage( hwnd, WM_CLOSE, 0, 0 );
         SendMessage( mainhWnd, WM_CLOSE, 0, 0 );
     }
+#endif
 }
-
 
 CV_IMPL int
 cvWaitKey( int delay )
 {
+    UNREFERENCED_PARAMETER(delay);
+    return 0;
+#if 0
     int time0 = GetTickCount();
 
     for(;;)
@@ -1781,9 +1843,10 @@ cvWaitKey( int delay )
             DispatchMessage(&message);
         }
     }
+#endif 
 }
 
-
+#if 0
 static CvTrackbar*
 icvFindTrackbarByName( const CvWindow* window, const char* name )
 {
@@ -2011,18 +2074,33 @@ cvCreateTrackbar( const char* trackbar_name, const char* window_name,
         on_notify, 0, 0 );
 }
 
+#endif
+
 CV_IMPL int
 cvCreateTrackbar2( const char* trackbar_name, const char* window_name,
                    int* val, int count, CvTrackbarCallback2 on_notify2,
                    void* userdata )
 {
+    UNREFERENCED_PARAMETER(trackbar_name);
+    UNREFERENCED_PARAMETER(window_name);
+    UNREFERENCED_PARAMETER(val);
+    UNREFERENCED_PARAMETER(count);
+    UNREFERENCED_PARAMETER(on_notify2);
+    UNREFERENCED_PARAMETER(userdata);
+    return 0;
+#if 0
     return icvCreateTrackbar( trackbar_name, window_name, val, count,
         0, on_notify2, userdata );
+#endif
 }
 
 CV_IMPL void
 cvSetMouseCallback( const char* window_name, CvMouseCallback on_mouse, void* param )
 {
+    UNREFERENCED_PARAMETER(window_name);
+    UNREFERENCED_PARAMETER(on_mouse);
+    UNREFERENCED_PARAMETER(param);
+#if 0
     CV_FUNCNAME( "cvSetMouseCallback" );
 
     __BEGIN__;
@@ -2040,11 +2118,16 @@ cvSetMouseCallback( const char* window_name, CvMouseCallback on_mouse, void* par
     window->on_mouse_param = param;
 
     __END__;
+#endif
 }
 
 
 CV_IMPL int cvGetTrackbarPos( const char* trackbar_name, const char* window_name )
 {
+    UNREFERENCED_PARAMETER(trackbar_name);
+    UNREFERENCED_PARAMETER(window_name);
+    return 0;
+#if 0
     int pos = -1;
 
     CV_FUNCNAME( "cvGetTrackbarPos" );
@@ -2067,11 +2150,16 @@ CV_IMPL int cvGetTrackbarPos( const char* trackbar_name, const char* window_name
     __END__;
 
     return pos;
+#endif
 }
 
 
 CV_IMPL void cvSetTrackbarPos( const char* trackbar_name, const char* window_name, int pos )
 {
+    UNREFERENCED_PARAMETER(trackbar_name);
+    UNREFERENCED_PARAMETER(window_name);
+    UNREFERENCED_PARAMETER(pos);
+#if 0
     CV_FUNCNAME( "cvSetTrackbarPos" );
 
     __BEGIN__;
@@ -2099,9 +2187,10 @@ CV_IMPL void cvSetTrackbarPos( const char* trackbar_name, const char* window_nam
     }
 
     __END__;
+#endif
 }
 
-
+#if 0
 CV_IMPL void* cvGetWindowHandle( const char* window_name )
 {
     void* hwnd = 0;
@@ -2159,5 +2248,7 @@ cvSetPostprocessFuncWin32_(const void* callback)
 {
     hg_on_postprocess = (CvWin32WindowCallback)callback;
 }
+
+#endif
 
 #endif //WIN32

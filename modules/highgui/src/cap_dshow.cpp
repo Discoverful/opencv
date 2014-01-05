@@ -101,6 +101,7 @@ Thanks to:
 
 #include <vector>
 
+#if 0
 //Include Directshow stuff here so we don't worry about needing all the h files.
 #if defined _MSC_VER && _MSC_VER >= 1500
 #  include "DShow.h"
@@ -3356,9 +3357,14 @@ bool CvCaptureCAM_DShow::setProperty( int property_id, double value )
     return false;
 }
 
+#endif
 
 CvCapture* cvCreateCameraCapture_DShow( int index )
 {
+    UNREFERENCED_PARAMETER(index);
+    return NULL;
+
+#if 0
     CvCaptureCAM_DShow* capture = new CvCaptureCAM_DShow;
 
     try
@@ -3374,6 +3380,8 @@ CvCapture* cvCreateCameraCapture_DShow( int index )
 
     delete capture;
     return 0;
+
+#endif
 }
 
 #endif

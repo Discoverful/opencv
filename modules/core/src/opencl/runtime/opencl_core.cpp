@@ -91,6 +91,10 @@ static void* AppleCLGetProcAddress(const char* name)
 
 static void* WinGetProcAddress(const char* name)
 {
+    UNREFERENCED_PARAMETER(name);
+    return NULL;
+
+#if 0
     static bool initialized = false;
     static HMODULE handle = NULL;
     if (!handle)
@@ -121,6 +125,8 @@ static void* WinGetProcAddress(const char* name)
             return NULL;
     }
     return (void*)GetProcAddress(handle, name);
+
+#endif
 }
 #define CV_CL_GET_PROC_ADDRESS(name) WinGetProcAddress(name)
 #endif // _WIN32

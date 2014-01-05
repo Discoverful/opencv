@@ -42,7 +42,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/optim/test;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/optim/include;C:/Users/Haitao/Projects/OpenCV/build/modules/optim;C:/Users/Haitao/Projects/OpenCV/modules/optim/src;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/optim/test;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../../modules/optim/include;../../modules/optim;../../../modules/optim/src;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -52,7 +52,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/optim/test;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/optim/include;C:/Users/Haitao/Projects/OpenCV/build/modules/optim;C:/Users/Haitao/Projects/OpenCV/modules/optim/src;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/optim/test;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../../modules/optim/include;../../modules/optim;../../../modules/optim/src;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -62,7 +62,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\modules\optim\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/optim/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule ../../../modules/optim/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">setlocal
 d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\optim\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
@@ -72,10 +72,10 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/optim/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\optim\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\optim\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../../modules/optim/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\optim\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\optim\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\optim\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/optim/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule ../../../modules/optim/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">setlocal
 d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\optim\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
@@ -85,7 +85,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/optim/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\optim\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\optim\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../../modules/optim/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\optim\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\optim\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\optim\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
     </CustomBuild>
@@ -100,7 +100,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/a5c80ec025f885e54f54a85937996e00/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../CMakeFiles/a5c80ec025f885e54f54a85937996e00/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\optim\CMakeFiles\ALL_BUILD</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Build all projects</Message>
@@ -111,7 +111,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/a5c80ec025f885e54f54a85937996e00/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../CMakeFiles/a5c80ec025f885e54f54a85937996e00/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\optim\CMakeFiles\ALL_BUILD</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
     </CustomBuild>
@@ -120,10 +120,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <None Include="CMakeFiles\ALL_BUILD" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/optim/opencv_optim.vcxproj">
+    <ProjectReference Include="../../modules/optim/opencv_optim.vcxproj">
       <Project>2C5FB4BD-F72F-4DC1-9048-BD57DDAA2F47</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/optim/opencv_test_optim.vcxproj">
+    <ProjectReference Include="../../modules/optim/opencv_test_optim.vcxproj">
       <Project>342659D1-D39D-4724-AE31-477EAE985855</Project>
     </ProjectReference>
   </ItemGroup>

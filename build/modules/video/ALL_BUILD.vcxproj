@@ -42,7 +42,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/video/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/build/modules/video;C:/Users/Haitao/Projects/OpenCV/modules/video/src;C:/Users/Haitao/Projects/OpenCV/modules/video/test;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/video/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../../modules/video/include;../../modules/video;../../../modules/video/src;../../../modules/video/test;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -52,7 +52,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/video/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/build/modules/video;C:/Users/Haitao/Projects/OpenCV/modules/video/src;C:/Users/Haitao/Projects/OpenCV/modules/video/test;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/video/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../../modules/video/include;../../modules/video;../../../modules/video/src;../../../modules/video/test;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -62,7 +62,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\modules\video\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/video/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule ../../../modules/video/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">setlocal
 d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\video\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
@@ -72,10 +72,10 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/video/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\video\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\video\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../../modules/video/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\video\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\video\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\video\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/video/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule ../../../modules/video/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">setlocal
 d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\video\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
@@ -85,7 +85,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/video/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\video\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\video\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../../modules/video/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\video\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\video\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\video\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
     </CustomBuild>
@@ -100,7 +100,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/4a7b53249ba43e6bfa7d3fa2352c3ce1/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../CMakeFiles/4a7b53249ba43e6bfa7d3fa2352c3ce1/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\video\CMakeFiles\ALL_BUILD</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Build all projects</Message>
@@ -111,7 +111,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/4a7b53249ba43e6bfa7d3fa2352c3ce1/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../CMakeFiles/4a7b53249ba43e6bfa7d3fa2352c3ce1/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\video\CMakeFiles\ALL_BUILD</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
     </CustomBuild>
@@ -120,13 +120,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <None Include="CMakeFiles\ALL_BUILD" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/video/opencv_perf_video.vcxproj">
+    <ProjectReference Include="../../modules/video/opencv_perf_video.vcxproj">
       <Project>04A46D63-86E6-4142-BE82-49E8ACCFCB5A</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/video/opencv_test_video.vcxproj">
+    <ProjectReference Include="../../modules/video/opencv_test_video.vcxproj">
       <Project>27ADFB82-9D24-49E6-B962-6BBA53A4F9F1</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/video/opencv_video.vcxproj">
+    <ProjectReference Include="../../modules/video/opencv_video.vcxproj">
       <Project>09CEC7CA-6179-4451-9A0A-4F9FAFF7B873</Project>
     </ProjectReference>
   </ItemGroup>

@@ -42,7 +42,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/cudawarping/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/cudawarping/include;C:/Users/Haitao/Projects/OpenCV/build/modules/cudawarping;C:/Users/Haitao/Projects/OpenCV/modules/cudawarping/src;C:/Users/Haitao/Projects/OpenCV/modules/cudawarping/test;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/cudawarping/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../../modules/cudawarping/include;../../modules/cudawarping;../../../modules/cudawarping/src;../../../modules/cudawarping/test;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -52,7 +52,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/cudawarping/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/cudawarping/include;C:/Users/Haitao/Projects/OpenCV/build/modules/cudawarping;C:/Users/Haitao/Projects/OpenCV/modules/cudawarping/src;C:/Users/Haitao/Projects/OpenCV/modules/cudawarping/test;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/cudawarping/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../../modules/cudawarping/include;../../modules/cudawarping;../../../modules/cudawarping/src;../../../modules/cudawarping/test;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -62,7 +62,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\modules\cudawarping\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/cudawarping/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule ../../../modules/cudawarping/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">setlocal
 d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\cudawarping\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
@@ -72,10 +72,10 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/cudawarping/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\cudawarping\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\cudawarping\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../../modules/cudawarping/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\cudawarping\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\cudawarping\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\cudawarping\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/cudawarping/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule ../../../modules/cudawarping/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">setlocal
 d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\cudawarping\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
@@ -85,7 +85,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/cudawarping/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\cudawarping\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\cudawarping\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../../modules/cudawarping/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\cudawarping\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\cudawarping\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\cudawarping\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
     </CustomBuild>
@@ -100,7 +100,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/1dbd0b782df0895af0b8fa760d4a9b0f/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../CMakeFiles/1dbd0b782df0895af0b8fa760d4a9b0f/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\cudawarping\CMakeFiles\ALL_BUILD</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Build all projects</Message>
@@ -111,7 +111,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/1dbd0b782df0895af0b8fa760d4a9b0f/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../CMakeFiles/1dbd0b782df0895af0b8fa760d4a9b0f/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\cudawarping\CMakeFiles\ALL_BUILD</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
     </CustomBuild>
@@ -120,13 +120,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <None Include="CMakeFiles\ALL_BUILD" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/cudawarping/opencv_cudawarping.vcxproj">
+    <ProjectReference Include="../../modules/cudawarping/opencv_cudawarping.vcxproj">
       <Project>54E94734-D9C6-400F-90B5-1C498BE439B5</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/cudawarping/opencv_perf_cudawarping.vcxproj">
+    <ProjectReference Include="../../modules/cudawarping/opencv_perf_cudawarping.vcxproj">
       <Project>516BA08D-99B3-4DA7-ABF1-201035C7B73D</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/cudawarping/opencv_test_cudawarping.vcxproj">
+    <ProjectReference Include="../../modules/cudawarping/opencv_test_cudawarping.vcxproj">
       <Project>FAFC81E1-45F8-4FB8-8EDD-96D74CFA87D9</Project>
     </ProjectReference>
   </ItemGroup>

@@ -42,7 +42,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/stitching/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/stitching/include;C:/Users/Haitao/Projects/OpenCV/modules/nonfree/include;C:/Users/Haitao/Projects/OpenCV/modules/ocl/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/modules/cudafeatures2d/include;C:/Users/Haitao/Projects/OpenCV/modules/cudafilters/include;C:/Users/Haitao/Projects/OpenCV/modules/cuda/include;C:/Users/Haitao/Projects/OpenCV/modules/objdetect/include;C:/Users/Haitao/Projects/OpenCV/modules/ml/include;C:/Users/Haitao/Projects/OpenCV/modules/cudawarping/include;C:/Users/Haitao/Projects/OpenCV/modules/cudaarithm/include;C:/Users/Haitao/Projects/OpenCV/modules/calib3d/include;C:/Users/Haitao/Projects/OpenCV/modules/features2d/include;C:/Users/Haitao/Projects/OpenCV/modules/flann/include;C:/Users/Haitao/Projects/OpenCV/build/modules/stitching;C:/Users/Haitao/Projects/OpenCV/modules/stitching/src;C:/Users/Haitao/Projects/OpenCV/modules/stitching/test;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/stitching/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../../modules/stitching/include;../../../modules/nonfree/include;../../../modules/ocl/include;../../../modules/video/include;../../../modules/cudafeatures2d/include;../../../modules/cudafilters/include;../../../modules/cuda/include;../../../modules/objdetect/include;../../../modules/ml/include;../../../modules/cudawarping/include;../../../modules/cudaarithm/include;../../../modules/calib3d/include;../../../modules/features2d/include;../../../modules/flann/include;../../modules/stitching;../../../modules/stitching/src;../../../modules/stitching/test;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -52,7 +52,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/stitching/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/stitching/include;C:/Users/Haitao/Projects/OpenCV/modules/nonfree/include;C:/Users/Haitao/Projects/OpenCV/modules/ocl/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/modules/cudafeatures2d/include;C:/Users/Haitao/Projects/OpenCV/modules/cudafilters/include;C:/Users/Haitao/Projects/OpenCV/modules/cuda/include;C:/Users/Haitao/Projects/OpenCV/modules/objdetect/include;C:/Users/Haitao/Projects/OpenCV/modules/ml/include;C:/Users/Haitao/Projects/OpenCV/modules/cudawarping/include;C:/Users/Haitao/Projects/OpenCV/modules/cudaarithm/include;C:/Users/Haitao/Projects/OpenCV/modules/calib3d/include;C:/Users/Haitao/Projects/OpenCV/modules/features2d/include;C:/Users/Haitao/Projects/OpenCV/modules/flann/include;C:/Users/Haitao/Projects/OpenCV/build/modules/stitching;C:/Users/Haitao/Projects/OpenCV/modules/stitching/src;C:/Users/Haitao/Projects/OpenCV/modules/stitching/test;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/stitching/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../../modules/stitching/include;../../../modules/nonfree/include;../../../modules/ocl/include;../../../modules/video/include;../../../modules/cudafeatures2d/include;../../../modules/cudafilters/include;../../../modules/cuda/include;../../../modules/objdetect/include;../../../modules/ml/include;../../../modules/cudawarping/include;../../../modules/cudaarithm/include;../../../modules/calib3d/include;../../../modules/features2d/include;../../../modules/flann/include;../../modules/stitching;../../../modules/stitching/src;../../../modules/stitching/test;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -62,7 +62,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\modules\stitching\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/stitching/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule ../../../modules/stitching/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">setlocal
 d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\stitching\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
@@ -72,10 +72,10 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/stitching/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\stitching\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\stitching\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../../modules/stitching/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\stitching\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\stitching\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\stitching\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/stitching/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule ../../../modules/stitching/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">setlocal
 d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\stitching\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
@@ -85,7 +85,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/stitching/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\stitching\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\stitching\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../../modules/stitching/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\stitching\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\stitching\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\stitching\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
     </CustomBuild>
@@ -100,7 +100,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/19433133152cb2cab55810f34e651b39/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../CMakeFiles/19433133152cb2cab55810f34e651b39/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\stitching\CMakeFiles\ALL_BUILD</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Build all projects</Message>
@@ -111,7 +111,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/19433133152cb2cab55810f34e651b39/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../CMakeFiles/19433133152cb2cab55810f34e651b39/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\stitching\CMakeFiles\ALL_BUILD</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
     </CustomBuild>
@@ -120,13 +120,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <None Include="CMakeFiles\ALL_BUILD" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/stitching/opencv_perf_stitching.vcxproj">
+    <ProjectReference Include="../../modules/stitching/opencv_perf_stitching.vcxproj">
       <Project>9D03086F-ED97-4E9B-8CC3-C8843B265E13</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/stitching/opencv_stitching.vcxproj">
+    <ProjectReference Include="../../modules/stitching/opencv_stitching.vcxproj">
       <Project>2D5F5850-0F01-4EDC-B012-049B0D39B904</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/stitching/opencv_test_stitching.vcxproj">
+    <ProjectReference Include="../../modules/stitching/opencv_test_stitching.vcxproj">
       <Project>58BFD008-3F27-4791-B41F-BD65BB65C1DC</Project>
     </ProjectReference>
   </ItemGroup>

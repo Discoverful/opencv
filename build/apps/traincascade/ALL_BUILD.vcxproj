@@ -42,7 +42,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/legacy/include;C:/Users/Haitao/Projects/OpenCV/modules/flann/include;C:/Users/Haitao/Projects/OpenCV/modules/features2d/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/modules/calib3d/include;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/objdetect/include;C:/Users/Haitao/Projects/OpenCV/modules/photo/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/ml/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/include/opencv;C:/Users/Haitao/Projects/OpenCV/apps/traincascade;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../modules/legacy/include;$(SolutionDir)../modules/flann/include;$(SolutionDir)../modules/features2d/include;$(SolutionDir)../modules/video/include;$(SolutionDir)../modules/calib3d/include;$(SolutionDir)../modules/highgui/include;$(SolutionDir)../modules/objdetect/include;$(SolutionDir)../modules/photo/include;$(SolutionDir)../modules/imgproc/include;$(SolutionDir)../modules/ml/include;$(SolutionDir)../modules/core/include;$(SolutionDir)../include/opencv;$(SolutionDir)../apps/traincascade;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -52,7 +52,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/legacy/include;C:/Users/Haitao/Projects/OpenCV/modules/flann/include;C:/Users/Haitao/Projects/OpenCV/modules/features2d/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/modules/calib3d/include;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/objdetect/include;C:/Users/Haitao/Projects/OpenCV/modules/photo/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/ml/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/include/opencv;C:/Users/Haitao/Projects/OpenCV/apps/traincascade;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../modules/legacy/include;$(SolutionDir)../modules/flann/include;$(SolutionDir)../modules/features2d/include;$(SolutionDir)../modules/video/include;$(SolutionDir)../modules/calib3d/include;$(SolutionDir)../modules/highgui/include;$(SolutionDir)../modules/objdetect/include;$(SolutionDir)../modules/photo/include;$(SolutionDir)../modules/imgproc/include;$(SolutionDir)../modules/ml/include;$(SolutionDir)../modules/core/include;$(SolutionDir)../include/opencv;$(SolutionDir)../apps/traincascade;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -62,7 +62,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\apps\traincascade\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/apps/traincascade/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule $(SolutionDir)../apps/traincascade/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">setlocal
 d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\apps\traincascade\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
@@ -72,10 +72,10 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/apps/traincascade/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\apps\traincascade\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\apps\traincascade\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">$(SolutionDir)../apps/traincascade/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\apps\traincascade\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\apps\traincascade\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\apps\traincascade\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/apps/traincascade/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule $(SolutionDir)../apps/traincascade/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">setlocal
 d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\apps\traincascade\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
@@ -85,7 +85,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/apps/traincascade/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\apps\traincascade\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\apps\traincascade\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">$(SolutionDir)../apps/traincascade/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\apps\traincascade\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\apps\traincascade\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\apps\traincascade\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
     </CustomBuild>
@@ -100,7 +100,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/cd76fef59da1916229ffe1a1df533477/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">$(SolutionDir)/CMakeFiles/cd76fef59da1916229ffe1a1df533477/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\apps\traincascade\CMakeFiles\ALL_BUILD</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Build all projects</Message>
@@ -111,7 +111,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/cd76fef59da1916229ffe1a1df533477/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">$(SolutionDir)/CMakeFiles/cd76fef59da1916229ffe1a1df533477/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\apps\traincascade\CMakeFiles\ALL_BUILD</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
     </CustomBuild>
@@ -120,7 +120,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <None Include="CMakeFiles\ALL_BUILD" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/apps/traincascade/opencv_traincascade.vcxproj">
+    <ProjectReference Include="$(SolutionDir)/apps/traincascade/opencv_traincascade.vcxproj">
       <Project>4A132B4F-7C1B-4269-B592-6057EA1FD585</Project>
     </ProjectReference>
   </ItemGroup>

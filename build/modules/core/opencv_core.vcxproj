@@ -55,7 +55,7 @@
     <ClCompile>
       <CompileAsWinRT>false</CompileAsWinRT>
       <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/core/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/build/modules/core;C:/Users/Haitao/Projects/OpenCV/modules/core/src;C:/Users/Haitao/Projects/OpenCV/modules/core/test;C:/Users/Haitao/Projects/OpenCV/3rdparty/include/opencl/1.2;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/core/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../modules/core;../../../modules/core/src;../../../modules/core/test;../../../3rdparty/include/opencl/1.2;../../3rdparty/zlib;../../../3rdparty/zlib;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -63,25 +63,25 @@
       <DisableSpecificWarnings>4251</DisableSpecificWarnings>
       <ExceptionHandling>Async</ExceptionHandling>
       <FloatingPointModel>Fast</FloatingPointModel>
-      <ForcedIncludeFiles>C:/Users/Haitao/Projects/OpenCV/modules/core/src/precomp.hpp</ForcedIncludeFiles>
+      <ForcedIncludeFiles>../../../modules/core/src/precomp.hpp</ForcedIncludeFiles>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>C:/Users/Haitao/Projects/OpenCV/modules/core/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile>../../../modules/core/src/precomp.hpp</PrecompiledHeaderFile>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WINAPI_FAMILY==WINAPI_FAMILY_PHONE_APP;WIN32;_WINRT_DLL;WP8;_WP8;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR="Debug";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WINAPI_FAMILY==WINAPI_FAMILY_PHONE_APP;WIN32;_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR="Debug";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>_WINRT_DLL;WP8;_WP8;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR=\"Debug\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/core/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/build/modules/core;C:/Users/Haitao/Projects/OpenCV/modules/core/src;C:/Users/Haitao/Projects/OpenCV/modules/core/test;C:/Users/Haitao/Projects/OpenCV/3rdparty/include/opencl/1.2;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR=\"Debug\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../../modules/core/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../modules/core;../../../modules/core/src;../../../modules/core/test;../../../3rdparty/include/opencl/1.2;../../3rdparty/zlib;../../../3rdparty/zlib;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/core/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/build/modules/core;C:/Users/Haitao/Projects/OpenCV/modules/core/src;C:/Users/Haitao/Projects/OpenCV/modules/core/test;C:/Users/Haitao/Projects/OpenCV/3rdparty/include/opencl/1.2;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/core/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../modules/core;../../../modules/core/src;../../../modules/core/test;../../../3rdparty/include/opencl/1.2;../../3rdparty/zlib;../../../3rdparty/zlib;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -94,8 +94,8 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>libc</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Haitao/Projects/OpenCV/build/lib/Debug/opencv_core300d.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Haitao/Projects/OpenCV/build/bin/Debug/opencv_core300d.pdb</ProgramDataBaseFile>
+      <ImportLibrary>../../lib/Debug/opencv_core300d.lib</ImportLibrary>
+      <ProgramDataBaseFile>../../bin/Debug/opencv_core300d.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -108,32 +108,32 @@
     <ClCompile>
       <CompileAsWinRT>false</CompileAsWinRT>
       <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/core/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/build/modules/core;C:/Users/Haitao/Projects/OpenCV/modules/core/src;C:/Users/Haitao/Projects/OpenCV/modules/core/test;C:/Users/Haitao/Projects/OpenCV/3rdparty/include/opencl/1.2;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/core/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../modules/core;../../../modules/core/src;../../../modules/core/test;../../../3rdparty/include/opencl/1.2;../../3rdparty/zlib;../../../3rdparty/zlib;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4251</DisableSpecificWarnings>
       <ExceptionHandling>Async</ExceptionHandling>
       <FloatingPointModel>Fast</FloatingPointModel>
-      <ForcedIncludeFiles>C:/Users/Haitao/Projects/OpenCV/modules/core/src/precomp.hpp</ForcedIncludeFiles>
+      <ForcedIncludeFiles>../../../modules/core/src/precomp.hpp</ForcedIncludeFiles>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>C:/Users/Haitao/Projects/OpenCV/modules/core/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile>../../../modules/core/src/precomp.hpp</PrecompiledHeaderFile>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>_WINRT_DLL;WP8;_WP8;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR="Release";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR="Release";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>_WINRT_DLL;WP8;_WP8;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR=\"Release\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/core/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/build/modules/core;C:/Users/Haitao/Projects/OpenCV/modules/core/src;C:/Users/Haitao/Projects/OpenCV/modules/core/test;C:/Users/Haitao/Projects/OpenCV/3rdparty/include/opencl/1.2;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR=\"Release\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../../modules/core/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../modules/core;../../../modules/core/src;../../../modules/core/test;../../../3rdparty/include/opencl/1.2;../../3rdparty/zlib;../../../3rdparty/zlib;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/core/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/build/modules/core;C:/Users/Haitao/Projects/OpenCV/modules/core/src;C:/Users/Haitao/Projects/OpenCV/modules/core/test;C:/Users/Haitao/Projects/OpenCV/3rdparty/include/opencl/1.2;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/core/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../modules/core;../../../modules/core/src;../../../modules/core/test;../../../3rdparty/include/opencl/1.2;../../3rdparty/zlib;../../../3rdparty/zlib;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -146,8 +146,8 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>libc</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Haitao/Projects/OpenCV/build/lib/Release/opencv_core300.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Haitao/Projects/OpenCV/build/bin/Release/opencv_core300.pdb</ProgramDataBaseFile>
+      <ImportLibrary>../../lib/Release/opencv_core300.lib</ImportLibrary>
+      <ProgramDataBaseFile>../../bin/Release/opencv_core300.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -157,40 +157,10 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="..\..\..\modules\core\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/core/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">setlocal
-d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\core\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/core/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\core\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\core\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/core/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">setlocal
-d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\core\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/core/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\core\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\core\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
     <CustomBuild Include="..\..\CMakeFiles\da6dbf5fb95b1c722ec6e5a56fa477ac\opencl_kernels.cpp.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Generating opencl_kernels.cpp, opencl_kernels.hpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">setlocal
-d:\bin\cmake\bin\cmake.exe -DMODULE_NAME="core" -DCL_DIR="C:/Users/Haitao/Projects/OpenCV/modules/core/src/opencl" -DOUTPUT="C:/Users/Haitao/Projects/OpenCV/build/modules/core/opencl_kernels.cpp" -P C:/Users/Haitao/Projects/OpenCV/cmake/cl2cpp.cmake
+          d:\bin\cmake\bin\cmake.exe -DMODULE_NAME="core" -DCL_DIR="../../../modules/core/src/opencl" -DOUTPUT="../../modules/core/opencl_kernels.cpp" -P ../../../cmake/cl2cpp.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -198,12 +168,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/da6dbf5fb95b1c722ec6e5a56fa477ac/opencl_kernels.cpp.rule;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\arithm.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\convert.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\copymakeborder.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\copyset.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\flip.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\inrange.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\lut.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\mixchannels.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\mulspectrums.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\reduce.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\set_identity.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\split_merge.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\transpose.cl;C:\Users\Haitao\Projects\OpenCV\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../CMakeFiles/da6dbf5fb95b1c722ec6e5a56fa477ac/opencl_kernels.cpp.rule;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\arithm.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\convert.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\copymakeborder.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\copyset.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\flip.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\inrange.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\lut.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\mixchannels.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\mulspectrums.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\reduce.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\set_identity.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\split_merge.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\transpose.cl;C:\Users\Haitao\Projects\OpenCV\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\core\opencl_kernels.cpp;C:\Users\Haitao\Projects\OpenCV\build\modules\core\opencl_kernels.hpp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Generating opencl_kernels.cpp, opencl_kernels.hpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">setlocal
-d:\bin\cmake\bin\cmake.exe -DMODULE_NAME="core" -DCL_DIR="C:/Users/Haitao/Projects/OpenCV/modules/core/src/opencl" -DOUTPUT="C:/Users/Haitao/Projects/OpenCV/build/modules/core/opencl_kernels.cpp" -P C:/Users/Haitao/Projects/OpenCV/cmake/cl2cpp.cmake
+d:\bin\cmake\bin\cmake.exe -DMODULE_NAME="core" -DCL_DIR="../../../modules/core/src/opencl" -DOUTPUT="../../modules/core/opencl_kernels.cpp" -P ../../../cmake/cl2cpp.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -211,7 +181,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/da6dbf5fb95b1c722ec6e5a56fa477ac/opencl_kernels.cpp.rule;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\arithm.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\convert.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\copymakeborder.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\copyset.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\flip.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\inrange.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\lut.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\mixchannels.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\mulspectrums.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\reduce.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\set_identity.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\split_merge.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\transpose.cl;C:\Users\Haitao\Projects\OpenCV\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../CMakeFiles/da6dbf5fb95b1c722ec6e5a56fa477ac/opencl_kernels.cpp.rule;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\arithm.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\convert.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\copymakeborder.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\copyset.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\flip.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\inrange.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\lut.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\mixchannels.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\mulspectrums.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\reduce.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\set_identity.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\split_merge.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\transpose.cl;C:\Users\Haitao\Projects\OpenCV\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\core\opencl_kernels.cpp;C:\Users\Haitao\Projects\OpenCV\build\modules\core\opencl_kernels.hpp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
     </CustomBuild>
@@ -329,9 +299,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="opencl_kernels.cpp" />
     <ClCompile Include="opencv_core_pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/core/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../../modules/core/src/precomp.hpp</PrecompiledHeaderFile>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/core/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../../modules/core/src/precomp.hpp</PrecompiledHeaderFile>
     </ClCompile>
     <None Include="version_string.inc" />
     <None Include="..\..\..\modules\core\src\opencl\arithm.cl" />
@@ -350,7 +320,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <None Include="..\..\..\modules\core\src\cuda\gpu_mat.cu" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/3rdparty/zlib/zlib.vcxproj">
+    <ProjectReference Include="../../3rdparty/zlib/zlib.vcxproj">
       <Project>DD290888-01D7-4DFB-82AA-C29D2908BF62</Project>
     </ProjectReference>
   </ItemGroup>

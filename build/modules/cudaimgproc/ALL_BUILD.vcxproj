@@ -42,7 +42,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/cudaimgproc/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/cudaimgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/cudafilters/include;C:/Users/Haitao/Projects/OpenCV/modules/cudaarithm/include;C:/Users/Haitao/Projects/OpenCV/build/modules/cudaimgproc;C:/Users/Haitao/Projects/OpenCV/modules/cudaimgproc/src;C:/Users/Haitao/Projects/OpenCV/modules/cudaimgproc/test;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/cudaimgproc/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../../modules/cudaimgproc/include;../../../modules/cudafilters/include;../../../modules/cudaarithm/include;../../modules/cudaimgproc;../../../modules/cudaimgproc/src;../../../modules/cudaimgproc/test;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -52,7 +52,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/cudaimgproc/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/cudaimgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/cudafilters/include;C:/Users/Haitao/Projects/OpenCV/modules/cudaarithm/include;C:/Users/Haitao/Projects/OpenCV/build/modules/cudaimgproc;C:/Users/Haitao/Projects/OpenCV/modules/cudaimgproc/src;C:/Users/Haitao/Projects/OpenCV/modules/cudaimgproc/test;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/cudaimgproc/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../../modules/cudaimgproc/include;../../../modules/cudafilters/include;../../../modules/cudaarithm/include;../../modules/cudaimgproc;../../../modules/cudaimgproc/src;../../../modules/cudaimgproc/test;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -62,7 +62,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\modules\cudaimgproc\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/cudaimgproc/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule ../../../modules/cudaimgproc/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">setlocal
 d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\cudaimgproc\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
@@ -72,10 +72,10 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/cudaimgproc/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\cudaimgproc\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\cudaimgproc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../../modules/cudaimgproc/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\cudaimgproc\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\cudaimgproc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\cudaimgproc\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/cudaimgproc/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule ../../../modules/cudaimgproc/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">setlocal
 d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\cudaimgproc\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
@@ -85,7 +85,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/cudaimgproc/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\cudaimgproc\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\cudaimgproc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../../modules/cudaimgproc/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\cudaimgproc\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\cudaimgproc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\cudaimgproc\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
     </CustomBuild>
@@ -100,7 +100,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/11bc66c07475030ffd6d2e53566fb2c8/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../CMakeFiles/11bc66c07475030ffd6d2e53566fb2c8/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\cudaimgproc\CMakeFiles\ALL_BUILD</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Build all projects</Message>
@@ -111,7 +111,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/11bc66c07475030ffd6d2e53566fb2c8/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../CMakeFiles/11bc66c07475030ffd6d2e53566fb2c8/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\cudaimgproc\CMakeFiles\ALL_BUILD</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
     </CustomBuild>
@@ -120,13 +120,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <None Include="CMakeFiles\ALL_BUILD" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/cudaimgproc/opencv_cudaimgproc.vcxproj">
+    <ProjectReference Include="../../modules/cudaimgproc/opencv_cudaimgproc.vcxproj">
       <Project>A4D5EB8D-2AB8-433E-9336-103822E84E6B</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/cudaimgproc/opencv_perf_cudaimgproc.vcxproj">
+    <ProjectReference Include="../../modules/cudaimgproc/opencv_perf_cudaimgproc.vcxproj">
       <Project>4CB8316A-D9A3-429D-917C-5A734AE1C51E</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/cudaimgproc/opencv_test_cudaimgproc.vcxproj">
+    <ProjectReference Include="../../modules/cudaimgproc/opencv_test_cudaimgproc.vcxproj">
       <Project>13D56C1D-CCEF-41A5-9DFA-BEFF95C02273</Project>
     </ProjectReference>
   </ItemGroup>

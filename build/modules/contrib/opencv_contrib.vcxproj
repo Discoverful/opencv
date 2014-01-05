@@ -54,7 +54,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile><CompileAsWinRT>false</CompileAsWinRT>
       <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/contrib/test;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/contrib/include;C:/Users/Haitao/Projects/OpenCV/modules/nonfree/include;C:/Users/Haitao/Projects/OpenCV/modules/ocl/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/modules/objdetect/include;C:/Users/Haitao/Projects/OpenCV/modules/ml/include;C:/Users/Haitao/Projects/OpenCV/modules/cudaarithm/include;C:/Users/Haitao/Projects/OpenCV/modules/calib3d/include;C:/Users/Haitao/Projects/OpenCV/modules/features2d/include;C:/Users/Haitao/Projects/OpenCV/modules/flann/include;C:/Users/Haitao/Projects/OpenCV/build/modules/contrib;C:/Users/Haitao/Projects/OpenCV/modules/contrib/src;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/contrib/test;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../../modules/contrib/include;../../../modules/nonfree/include;../../../modules/ocl/include;../../../modules/video/include;../../../modules/objdetect/include;../../../modules/ml/include;../../../modules/cudaarithm/include;../../../modules/calib3d/include;../../../modules/features2d/include;../../../modules/flann/include;../../modules/contrib;../../../modules/contrib/src;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -63,25 +63,25 @@
       
       <ExceptionHandling>Async</ExceptionHandling>
       <FloatingPointModel>Fast</FloatingPointModel>
-      <ForcedIncludeFiles>C:/Users/Haitao/Projects/OpenCV/modules/contrib/src/precomp.hpp</ForcedIncludeFiles>
+      <ForcedIncludeFiles>../../../modules/contrib/src/precomp.hpp</ForcedIncludeFiles>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>C:/Users/Haitao/Projects/OpenCV/modules/contrib/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile>../../../modules/contrib/src/precomp.hpp</PrecompiledHeaderFile>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>_WINRT_DLL;WP8;_WP8;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR="Debug";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR="Debug";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>_WINRT_DLL;WP8;_WP8;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR=\"Debug\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/contrib/test;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/contrib/include;C:/Users/Haitao/Projects/OpenCV/modules/nonfree/include;C:/Users/Haitao/Projects/OpenCV/modules/ocl/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/modules/objdetect/include;C:/Users/Haitao/Projects/OpenCV/modules/ml/include;C:/Users/Haitao/Projects/OpenCV/modules/cudaarithm/include;C:/Users/Haitao/Projects/OpenCV/modules/calib3d/include;C:/Users/Haitao/Projects/OpenCV/modules/features2d/include;C:/Users/Haitao/Projects/OpenCV/modules/flann/include;C:/Users/Haitao/Projects/OpenCV/build/modules/contrib;C:/Users/Haitao/Projects/OpenCV/modules/contrib/src;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR=\"Debug\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../../modules/contrib/test;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../../modules/contrib/include;../../../modules/nonfree/include;../../../modules/ocl/include;../../../modules/video/include;../../../modules/objdetect/include;../../../modules/ml/include;../../../modules/cudaarithm/include;../../../modules/calib3d/include;../../../modules/features2d/include;../../../modules/flann/include;../../modules/contrib;../../../modules/contrib/src;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/contrib/test;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/contrib/include;C:/Users/Haitao/Projects/OpenCV/modules/nonfree/include;C:/Users/Haitao/Projects/OpenCV/modules/ocl/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/modules/objdetect/include;C:/Users/Haitao/Projects/OpenCV/modules/ml/include;C:/Users/Haitao/Projects/OpenCV/modules/cudaarithm/include;C:/Users/Haitao/Projects/OpenCV/modules/calib3d/include;C:/Users/Haitao/Projects/OpenCV/modules/features2d/include;C:/Users/Haitao/Projects/OpenCV/modules/flann/include;C:/Users/Haitao/Projects/OpenCV/build/modules/contrib;C:/Users/Haitao/Projects/OpenCV/modules/contrib/src;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/contrib/test;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../../modules/contrib/include;../../../modules/nonfree/include;../../../modules/ocl/include;../../../modules/video/include;../../../modules/objdetect/include;../../../modules/ml/include;../../../modules/cudaarithm/include;../../../modules/calib3d/include;../../../modules/features2d/include;../../../modules/flann/include;../../modules/contrib;../../../modules/contrib/src;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -94,8 +94,8 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>libc</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Haitao/Projects/OpenCV/build/lib/Debug/opencv_contrib300d.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Haitao/Projects/OpenCV/build/bin/Debug/opencv_contrib300d.pdb</ProgramDataBaseFile>
+      <ImportLibrary>../../lib/Debug/opencv_contrib300d.lib</ImportLibrary>
+      <ProgramDataBaseFile>../../bin/Debug/opencv_contrib300d.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -107,7 +107,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <ClCompile><CompileAsWinRT>false</CompileAsWinRT>
       <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/contrib/test;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/contrib/include;C:/Users/Haitao/Projects/OpenCV/modules/nonfree/include;C:/Users/Haitao/Projects/OpenCV/modules/ocl/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/modules/objdetect/include;C:/Users/Haitao/Projects/OpenCV/modules/ml/include;C:/Users/Haitao/Projects/OpenCV/modules/cudaarithm/include;C:/Users/Haitao/Projects/OpenCV/modules/calib3d/include;C:/Users/Haitao/Projects/OpenCV/modules/features2d/include;C:/Users/Haitao/Projects/OpenCV/modules/flann/include;C:/Users/Haitao/Projects/OpenCV/build/modules/contrib;C:/Users/Haitao/Projects/OpenCV/modules/contrib/src;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/contrib/test;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../../modules/contrib/include;../../../modules/nonfree/include;../../../modules/ocl/include;../../../modules/video/include;../../../modules/objdetect/include;../../../modules/ml/include;../../../modules/cudaarithm/include;../../../modules/calib3d/include;../../../modules/features2d/include;../../../modules/flann/include;../../modules/contrib;../../../modules/contrib/src;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -115,25 +115,25 @@
       
       <ExceptionHandling>Async</ExceptionHandling>
       <FloatingPointModel>Fast</FloatingPointModel>
-      <ForcedIncludeFiles>C:/Users/Haitao/Projects/OpenCV/modules/contrib/src/precomp.hpp</ForcedIncludeFiles>
+      <ForcedIncludeFiles>../../../modules/contrib/src/precomp.hpp</ForcedIncludeFiles>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>C:/Users/Haitao/Projects/OpenCV/modules/contrib/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile>../../../modules/contrib/src/precomp.hpp</PrecompiledHeaderFile>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>_WINRT_DLL;WP8;_WP8;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR="Release";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR="Release";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>_WINRT_DLL;WP8;_WP8;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR=\"Release\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/contrib/test;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/contrib/include;C:/Users/Haitao/Projects/OpenCV/modules/nonfree/include;C:/Users/Haitao/Projects/OpenCV/modules/ocl/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/modules/objdetect/include;C:/Users/Haitao/Projects/OpenCV/modules/ml/include;C:/Users/Haitao/Projects/OpenCV/modules/cudaarithm/include;C:/Users/Haitao/Projects/OpenCV/modules/calib3d/include;C:/Users/Haitao/Projects/OpenCV/modules/features2d/include;C:/Users/Haitao/Projects/OpenCV/modules/flann/include;C:/Users/Haitao/Projects/OpenCV/build/modules/contrib;C:/Users/Haitao/Projects/OpenCV/modules/contrib/src;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR=\"Release\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../../modules/contrib/test;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../../modules/contrib/include;../../../modules/nonfree/include;../../../modules/ocl/include;../../../modules/video/include;../../../modules/objdetect/include;../../../modules/ml/include;../../../modules/cudaarithm/include;../../../modules/calib3d/include;../../../modules/features2d/include;../../../modules/flann/include;../../modules/contrib;../../../modules/contrib/src;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/contrib/test;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/modules/contrib/include;C:/Users/Haitao/Projects/OpenCV/modules/nonfree/include;C:/Users/Haitao/Projects/OpenCV/modules/ocl/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/modules/objdetect/include;C:/Users/Haitao/Projects/OpenCV/modules/ml/include;C:/Users/Haitao/Projects/OpenCV/modules/cudaarithm/include;C:/Users/Haitao/Projects/OpenCV/modules/calib3d/include;C:/Users/Haitao/Projects/OpenCV/modules/features2d/include;C:/Users/Haitao/Projects/OpenCV/modules/flann/include;C:/Users/Haitao/Projects/OpenCV/build/modules/contrib;C:/Users/Haitao/Projects/OpenCV/modules/contrib/src;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/contrib/test;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../../modules/contrib/include;../../../modules/nonfree/include;../../../modules/ocl/include;../../../modules/video/include;../../../modules/objdetect/include;../../../modules/ml/include;../../../modules/cudaarithm/include;../../../modules/calib3d/include;../../../modules/features2d/include;../../../modules/flann/include;../../modules/contrib;../../../modules/contrib/src;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -146,8 +146,8 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>libc</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Haitao/Projects/OpenCV/build/lib/Release/opencv_contrib300.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Haitao/Projects/OpenCV/build/bin/Release/opencv_contrib300.pdb</ProgramDataBaseFile>
+      <ImportLibrary>../../lib/Release/opencv_contrib300.lib</ImportLibrary>
+      <ProgramDataBaseFile>../../bin/Release/opencv_contrib300.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -158,7 +158,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\modules\contrib\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/contrib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule ../../../modules/contrib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">setlocal
 d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\contrib\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
@@ -168,10 +168,10 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/contrib/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\contrib\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\contrib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../../modules/contrib/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\contrib\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\contrib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\contrib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/contrib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule ../../../modules/contrib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">setlocal
 d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\contrib\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
@@ -181,7 +181,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/contrib/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\contrib\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\contrib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../../modules/contrib/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\contrib\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\contrib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\contrib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
     </CustomBuild>
@@ -222,46 +222,46 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="..\..\..\modules\contrib\src\stereovar.cpp" />
     <ClCompile Include="opencv_contrib_pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/contrib/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../../modules/contrib/src/precomp.hpp</PrecompiledHeaderFile>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/contrib/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../../modules/contrib/src/precomp.hpp</PrecompiledHeaderFile>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/calib3d/opencv_calib3d.vcxproj">
+    <ProjectReference Include="../../modules/calib3d/opencv_calib3d.vcxproj">
       <Project>775288F3-AAD5-4AFB-8E83-4DE21830309C</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/core/opencv_core.vcxproj">
+    <ProjectReference Include="../../modules/core/opencv_core.vcxproj">
       <Project>5B9B9E5F-EC6F-4E37-8F3E-DED15CFFAEAF</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/cudaarithm/opencv_cudaarithm.vcxproj">
+    <ProjectReference Include="../../modules/cudaarithm/opencv_cudaarithm.vcxproj">
       <Project>ACC7871E-3565-42A5-9E4E-49196A83336C</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/features2d/opencv_features2d.vcxproj">
+    <ProjectReference Include="../../modules/features2d/opencv_features2d.vcxproj">
       <Project>F6081E75-1DE0-4111-8F47-9315501017AC</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/flann/opencv_flann.vcxproj">
+    <ProjectReference Include="../../modules/flann/opencv_flann.vcxproj">
       <Project>C912C367-FA00-4A84-875A-5CF53999600A</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/highgui/opencv_highgui.vcxproj">
+    <ProjectReference Include="../../modules/highgui/opencv_highgui.vcxproj">
       <Project>152C5018-3292-4ADF-8992-B144B7CA7504</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/imgproc/opencv_imgproc.vcxproj">
+    <ProjectReference Include="../../modules/imgproc/opencv_imgproc.vcxproj">
       <Project>16EF83FC-A100-4D69-8D52-5D0C8BBF573B</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/ml/opencv_ml.vcxproj">
+    <ProjectReference Include="../../modules/ml/opencv_ml.vcxproj">
       <Project>13D1AFF1-2D7D-41B0-8F58-F8F7D4F93971</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/nonfree/opencv_nonfree.vcxproj">
+    <ProjectReference Include="../../modules/nonfree/opencv_nonfree.vcxproj">
       <Project>2820310E-26AF-4B71-93B3-1DE84982FFA1</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/objdetect/opencv_objdetect.vcxproj">
+    <ProjectReference Include="../../modules/objdetect/opencv_objdetect.vcxproj">
       <Project>25147852-1406-4424-9C5C-34222EF2E9FA</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/ocl/opencv_ocl.vcxproj">
+    <ProjectReference Include="../../modules/ocl/opencv_ocl.vcxproj">
       <Project>6E110583-A7EB-4DC9-89A5-5294A7663612</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/video/opencv_video.vcxproj">
+    <ProjectReference Include="../../modules/video/opencv_video.vcxproj">
       <Project>09CEC7CA-6179-4451-9A0A-4F9FAFF7B873</Project>
     </ProjectReference>
   </ItemGroup>

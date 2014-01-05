@@ -42,7 +42,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/photo/include;C:/Users/Haitao/Projects/OpenCV/modules/cudaoptflow/include;C:/Users/Haitao/Projects/OpenCV/modules/legacy/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/modules/cudaimgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/cudafilters/include;C:/Users/Haitao/Projects/OpenCV/modules/cuda/include;C:/Users/Haitao/Projects/OpenCV/modules/objdetect/include;C:/Users/Haitao/Projects/OpenCV/modules/ml/include;C:/Users/Haitao/Projects/OpenCV/modules/cudawarping/include;C:/Users/Haitao/Projects/OpenCV/modules/cudaarithm/include;C:/Users/Haitao/Projects/OpenCV/modules/calib3d/include;C:/Users/Haitao/Projects/OpenCV/modules/features2d/include;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/flann/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/build/modules/videostab;C:/Users/Haitao/Projects/OpenCV/modules/videostab/src;C:/Users/Haitao/Projects/OpenCV/modules/videostab/include;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/photo/include;../../../modules/cudaoptflow/include;../../../modules/legacy/include;../../../modules/video/include;../../../modules/cudaimgproc/include;../../../modules/cudafilters/include;../../../modules/cuda/include;../../../modules/objdetect/include;../../../modules/ml/include;../../../modules/cudawarping/include;../../../modules/cudaarithm/include;../../../modules/calib3d/include;../../../modules/features2d/include;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/flann/include;../../../modules/core/include;../../modules/videostab;../../../modules/videostab/src;../../../modules/videostab/include;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -52,7 +52,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/photo/include;C:/Users/Haitao/Projects/OpenCV/modules/cudaoptflow/include;C:/Users/Haitao/Projects/OpenCV/modules/legacy/include;C:/Users/Haitao/Projects/OpenCV/modules/video/include;C:/Users/Haitao/Projects/OpenCV/modules/cudaimgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/cudafilters/include;C:/Users/Haitao/Projects/OpenCV/modules/cuda/include;C:/Users/Haitao/Projects/OpenCV/modules/objdetect/include;C:/Users/Haitao/Projects/OpenCV/modules/ml/include;C:/Users/Haitao/Projects/OpenCV/modules/cudawarping/include;C:/Users/Haitao/Projects/OpenCV/modules/cudaarithm/include;C:/Users/Haitao/Projects/OpenCV/modules/calib3d/include;C:/Users/Haitao/Projects/OpenCV/modules/features2d/include;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/flann/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/build/modules/videostab;C:/Users/Haitao/Projects/OpenCV/modules/videostab/src;C:/Users/Haitao/Projects/OpenCV/modules/videostab/include;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/photo/include;../../../modules/cudaoptflow/include;../../../modules/legacy/include;../../../modules/video/include;../../../modules/cudaimgproc/include;../../../modules/cudafilters/include;../../../modules/cuda/include;../../../modules/objdetect/include;../../../modules/ml/include;../../../modules/cudawarping/include;../../../modules/cudaarithm/include;../../../modules/calib3d/include;../../../modules/features2d/include;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/flann/include;../../../modules/core/include;../../modules/videostab;../../../modules/videostab/src;../../../modules/videostab/include;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -62,7 +62,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\modules\videostab\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/videostab/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule ../../../modules/videostab/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">setlocal
 d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\videostab\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
@@ -72,10 +72,10 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/videostab/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\videostab\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\videostab\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../../modules/videostab/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\videostab\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\videostab\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\videostab\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/videostab/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule ../../../modules/videostab/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">setlocal
 d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\videostab\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
@@ -85,7 +85,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/videostab/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\videostab\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\videostab\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../../modules/videostab/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\videostab\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\videostab\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\videostab\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
     </CustomBuild>
@@ -100,7 +100,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/0b4beb2da0d2af0d3e6f68531c5d6ee0/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../CMakeFiles/0b4beb2da0d2af0d3e6f68531c5d6ee0/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\videostab\CMakeFiles\ALL_BUILD</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Build all projects</Message>
@@ -111,7 +111,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/0b4beb2da0d2af0d3e6f68531c5d6ee0/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../CMakeFiles/0b4beb2da0d2af0d3e6f68531c5d6ee0/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\videostab\CMakeFiles\ALL_BUILD</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
     </CustomBuild>
@@ -120,7 +120,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <None Include="CMakeFiles\ALL_BUILD" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/videostab/opencv_videostab.vcxproj">
+    <ProjectReference Include="../../modules/videostab/opencv_videostab.vcxproj">
       <Project>070515A1-A153-4B94-985D-FDEAA0775FCD</Project>
     </ProjectReference>
   </ItemGroup>

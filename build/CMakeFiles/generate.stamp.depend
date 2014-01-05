@@ -4,7 +4,7 @@ C:/Users/Haitao/Projects/OpenCV/cmake/OpenCVMinDepVersions.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeVS12FindMake.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeDetermineSystem.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeSystem.cmake.in
-C:/Users/Haitao/Projects/OpenCV/build2/CMakeFiles/2.8.12.1/CMakeSystem.cmake
+C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/2.8.12.1/CMakeSystem.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeDetermineCXXCompiler.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeDetermineCompiler.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/Platform/Windows-CXX.cmake
@@ -13,7 +13,7 @@ d:/bin/cmake/share/cmake-2.8/Modules/CompilerId/VS-10.vcxproj.in
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeClDeps.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeFindBinUtils.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeCXXCompiler.cmake.in
-C:/Users/Haitao/Projects/OpenCV/build2/CMakeFiles/2.8.12.1/CMakeCXXCompiler.cmake
+C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/2.8.12.1/CMakeCXXCompiler.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeDetermineCCompiler.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeDetermineCompiler.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeDetermineCompilerId.cmake
@@ -21,7 +21,7 @@ d:/bin/cmake/share/cmake-2.8/Modules/CompilerId/VS-10.vcxproj.in
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeClDeps.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeFindBinUtils.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeCCompiler.cmake.in
-C:/Users/Haitao/Projects/OpenCV/build2/CMakeFiles/2.8.12.1/CMakeCCompiler.cmake
+C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/2.8.12.1/CMakeCCompiler.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeSystemSpecificInformation.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeGenericSystem.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/Platform/Windows.cmake
@@ -31,7 +31,7 @@ d:/bin/cmake/share/cmake-2.8/Modules/Platform/Windows-MSVC-CXX.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/Platform/Windows-MSVC.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeDetermineRCCompiler.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeRCCompiler.cmake.in
-C:/Users/Haitao/Projects/OpenCV/build2/CMakeFiles/2.8.12.1/CMakeRCCompiler.cmake
+C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/2.8.12.1/CMakeRCCompiler.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeRCInformation.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeTestRCCompiler.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeCommonLanguageInclude.cmake
@@ -41,7 +41,7 @@ d:/bin/cmake/share/cmake-2.8/Modules/CMakeDetermineCompilerABI.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeParseImplicitLinkInfo.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeCXXCompiler.cmake.in
-C:/Users/Haitao/Projects/OpenCV/build2/CMakeFiles/2.8.12.1/CMakeCXXCompiler.cmake
+C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/2.8.12.1/CMakeCXXCompiler.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeCInformation.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/Platform/Windows-MSVC-C.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/Platform/Windows-MSVC.cmake
@@ -52,7 +52,7 @@ d:/bin/cmake/share/cmake-2.8/Modules/CMakeDetermineCompilerABI.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeParseImplicitLinkInfo.cmake
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeCCompilerABI.c
 d:/bin/cmake/share/cmake-2.8/Modules/CMakeCCompiler.cmake.in
-C:/Users/Haitao/Projects/OpenCV/build2/CMakeFiles/2.8.12.1/CMakeCCompiler.cmake
+C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/2.8.12.1/CMakeCCompiler.cmake
 C:/Users/Haitao/Projects/OpenCV/cmake/OpenCVUtils.cmake
 C:/Users/Haitao/Projects/OpenCV/cmake/OpenCVDetectCXXCompiler.cmake
 C:/Users/Haitao/Projects/OpenCV/cmake/OpenCVVersion.cmake

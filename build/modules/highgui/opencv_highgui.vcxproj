@@ -52,36 +52,36 @@
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</GenerateManifest>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <ClCompile><CompileAsWinRT>false</CompileAsWinRT>
+    <ClCompile>
+      <CompileAsWinRT>false</CompileAsWinRT>
       <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/highgui/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/build/modules/highgui;C:/Users/Haitao/Projects/OpenCV/modules/highgui/src;C:/Users/Haitao/Projects/OpenCV/modules/highgui/test;C:/Users/Haitao/Projects/OpenCV/3rdparty/libjasper;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/libtiff;C:/Users/Haitao/Projects/OpenCV/3rdparty/libtiff;C:/Users/Haitao/Projects/OpenCV/3rdparty/libpng;C:/Users/Haitao/Projects/OpenCV/3rdparty/libwebp;C:/Users/Haitao/Projects/OpenCV/3rdparty/libjpeg;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/build;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Half;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Iex;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/IlmThread;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Imath;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/IlmImf;C:/Users/Haitao/Projects/OpenCV/3rdparty/include;C:/Users/Haitao/Projects/OpenCV/3rdparty/include/ffmpeg_;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/highgui/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../modules/highgui;../../../modules/highgui/src;../../../modules/highgui/test;../../../3rdparty/libjasper;../../3rdparty/libtiff;../../../3rdparty/libtiff;../../../3rdparty/libpng;../../../3rdparty/libwebp;../../../3rdparty/libjpeg;../../3rdparty/zlib;../../../3rdparty/zlib;../../;../../../3rdparty/openexr/Half;../../../3rdparty/openexr/Iex;../../../3rdparty/openexr/IlmThread;../../../3rdparty/openexr/Imath;../../../3rdparty/openexr/IlmImf;../../../3rdparty/include;../../../3rdparty/include/ffmpeg_;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4251</DisableSpecificWarnings>
-      
       <ExceptionHandling>Async</ExceptionHandling>
       <FloatingPointModel>Fast</FloatingPointModel>
-      <ForcedIncludeFiles>C:/Users/Haitao/Projects/OpenCV/modules/highgui/src/precomp.hpp</ForcedIncludeFiles>
+      <ForcedIncludeFiles>../../../modules/highgui/src/precomp.hpp</ForcedIncludeFiles>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>C:/Users/Haitao/Projects/OpenCV/modules/highgui/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile>../../../modules/highgui/src/precomp.hpp</PrecompiledHeaderFile>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>_WINRT_DLL;WP8;_WP8;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;HAVE_WEBP;HIGHGUI_EXPORTS;CMAKE_INTDIR="Debug";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;HAVE_WEBP;HIGHGUI_EXPORTS;CMAKE_INTDIR="Debug";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>_WINRT_DLL;WP8;_WP8;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;HAVE_WEBP;HIGHGUI_EXPORTS;CMAKE_INTDIR=\"Debug\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/highgui/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/build/modules/highgui;C:/Users/Haitao/Projects/OpenCV/modules/highgui/src;C:/Users/Haitao/Projects/OpenCV/modules/highgui/test;C:/Users/Haitao/Projects/OpenCV/3rdparty/libjasper;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/libtiff;C:/Users/Haitao/Projects/OpenCV/3rdparty/libtiff;C:/Users/Haitao/Projects/OpenCV/3rdparty/libpng;C:/Users/Haitao/Projects/OpenCV/3rdparty/libwebp;C:/Users/Haitao/Projects/OpenCV/3rdparty/libjpeg;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/build;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Half;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Iex;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/IlmThread;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Imath;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/IlmImf;C:/Users/Haitao/Projects/OpenCV/3rdparty/include;C:/Users/Haitao/Projects/OpenCV/3rdparty/include/ffmpeg_;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;HAVE_WEBP;HIGHGUI_EXPORTS;CMAKE_INTDIR=\"Debug\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../../modules/highgui/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../modules/highgui;../../../modules/highgui/src;../../../modules/highgui/test;../../../3rdparty/libjasper;../../3rdparty/libtiff;../../../3rdparty/libtiff;../../../3rdparty/libpng;../../../3rdparty/libwebp;../../../3rdparty/libjpeg;../../3rdparty/zlib;../../../3rdparty/zlib;../../;../../../3rdparty/openexr/Half;../../../3rdparty/openexr/Iex;../../../3rdparty/openexr/IlmThread;../../../3rdparty/openexr/Imath;../../../3rdparty/openexr/IlmImf;../../../3rdparty/include;../../../3rdparty/include/ffmpeg_;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/highgui/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/build/modules/highgui;C:/Users/Haitao/Projects/OpenCV/modules/highgui/src;C:/Users/Haitao/Projects/OpenCV/modules/highgui/test;C:/Users/Haitao/Projects/OpenCV/3rdparty/libjasper;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/libtiff;C:/Users/Haitao/Projects/OpenCV/3rdparty/libtiff;C:/Users/Haitao/Projects/OpenCV/3rdparty/libpng;C:/Users/Haitao/Projects/OpenCV/3rdparty/libwebp;C:/Users/Haitao/Projects/OpenCV/3rdparty/libjpeg;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/build;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Half;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Iex;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/IlmThread;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Imath;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/IlmImf;C:/Users/Haitao/Projects/OpenCV/3rdparty/include;C:/Users/Haitao/Projects/OpenCV/3rdparty/include/ffmpeg_;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/highgui/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../modules/highgui;../../../modules/highgui/src;../../../modules/highgui/test;../../../3rdparty/libjasper;../../3rdparty/libtiff;../../../3rdparty/libtiff;../../../3rdparty/libpng;../../../3rdparty/libwebp;../../../3rdparty/libjpeg;../../3rdparty/zlib;../../../3rdparty/zlib;../../;../../../3rdparty/openexr/Half;../../../3rdparty/openexr/Iex;../../../3rdparty/openexr/IlmThread;../../../3rdparty/openexr/Imath;../../../3rdparty/openexr/IlmImf;../../../3rdparty/include;../../../3rdparty/include/ffmpeg_;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -89,11 +89,11 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>Copying C:/Users/Haitao/Projects/OpenCV/3rdparty/ffmpeg/opencv_ffmpeg.dll to the output directory</Message>
+      <Message>Copying ../../../3rdparty/ffmpeg/opencv_ffmpeg.dll to the output directory</Message>
       <Command>setlocal
-d:\bin\cmake\bin\cmake.exe -E copy C:/Users/Haitao/Projects/OpenCV/3rdparty/ffmpeg/opencv_ffmpeg.dll C:/Users/Haitao/Projects/OpenCV/build/bin/Release/opencv_ffmpeg300.dll
+d:\bin\cmake\bin\cmake.exe -E copy ../../../3rdparty/ffmpeg/opencv_ffmpeg.dll ../../bin/Release/opencv_ffmpeg300.dll
 if %errorlevel% neq 0 goto :cmEnd
-d:\bin\cmake\bin\cmake.exe -E copy C:/Users/Haitao/Projects/OpenCV/3rdparty/ffmpeg/opencv_ffmpeg.dll C:/Users/Haitao/Projects/OpenCV/build/bin/Debug/opencv_ffmpeg300.dll
+d:\bin\cmake\bin\cmake.exe -E copy ../../../3rdparty/ffmpeg/opencv_ffmpeg.dll ../../bin/Debug/opencv_ffmpeg300.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -104,12 +104,12 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
       <AdditionalOptions>  /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>..\..\lib\Debug\opencv_core300d.lib;..\..\lib\Debug\opencv_imgproc300d.lib;..\..\3rdparty\lib\Debug\zlibd.lib;..\..\3rdparty\lib\Debug\libjpegd.lib;..\..\3rdparty\lib\Debug\libwebpd.lib;..\..\3rdparty\lib\Debug\libpngd.lib;..\..\3rdparty\lib\Debug\libtiffd.lib;..\..\3rdparty\lib\Debug\libjasperd.lib;..\..\3rdparty\lib\Debug\IlmImfd.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;vfw32.lib;..\..\lib\Debug\opencv_core300d.lib;..\..\3rdparty\lib\Debug\zlibd.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/Users/Haitao/Projects/OpenCV/3rdparty/lib;C:/Users/Haitao/Projects/OpenCV/3rdparty/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>..\..\lib\Debug\opencv_core300d.lib;..\..\lib\Debug\opencv_imgproc300d.lib;..\..\3rdparty\lib\Debug\zlibd.lib;..\..\3rdparty\lib\Debug\libjpegd.lib;..\..\3rdparty\lib\Debug\libwebpd.lib;..\..\3rdparty\lib\Debug\libpngd.lib;..\..\3rdparty\lib\Debug\libtiffd.lib;..\..\3rdparty\lib\Debug\libjasperd.lib;..\..\3rdparty\lib\Debug\IlmImfd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../../3rdparty/lib;../../../3rdparty/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>atlthunk.lib;atlsd.lib;libcmt.lib</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Haitao/Projects/OpenCV/build/lib/Debug/opencv_highgui300d.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Haitao/Projects/OpenCV/build/bin/Debug/opencv_highgui300d.pdb</ProgramDataBaseFile>
+      <ImportLibrary>../../lib/Debug/opencv_highgui300d.lib</ImportLibrary>
+      <ProgramDataBaseFile>../../bin/Debug/opencv_highgui300d.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -119,35 +119,35 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
-    <ClCompile><CompileAsWinRT>false</CompileAsWinRT>
+    <ClCompile>
+      <CompileAsWinRT>false</CompileAsWinRT>
       <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/highgui/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/build/modules/highgui;C:/Users/Haitao/Projects/OpenCV/modules/highgui/src;C:/Users/Haitao/Projects/OpenCV/modules/highgui/test;C:/Users/Haitao/Projects/OpenCV/3rdparty/libjasper;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/libtiff;C:/Users/Haitao/Projects/OpenCV/3rdparty/libtiff;C:/Users/Haitao/Projects/OpenCV/3rdparty/libpng;C:/Users/Haitao/Projects/OpenCV/3rdparty/libwebp;C:/Users/Haitao/Projects/OpenCV/3rdparty/libjpeg;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/build;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Half;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Iex;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/IlmThread;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Imath;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/IlmImf;C:/Users/Haitao/Projects/OpenCV/3rdparty/include;C:/Users/Haitao/Projects/OpenCV/3rdparty/include/ffmpeg_;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/highgui/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../modules/highgui;../../../modules/highgui/src;../../../modules/highgui/test;../../../3rdparty/libjasper;../../3rdparty/libtiff;../../../3rdparty/libtiff;../../../3rdparty/libpng;../../../3rdparty/libwebp;../../../3rdparty/libjpeg;../../3rdparty/zlib;../../../3rdparty/zlib;../../;../../../3rdparty/openexr/Half;../../../3rdparty/openexr/Iex;../../../3rdparty/openexr/IlmThread;../../../3rdparty/openexr/Imath;../../../3rdparty/openexr/IlmImf;../../../3rdparty/include;../../../3rdparty/include/ffmpeg_;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4251</DisableSpecificWarnings>
-      
       <ExceptionHandling>Async</ExceptionHandling>
       <FloatingPointModel>Fast</FloatingPointModel>
-      <ForcedIncludeFiles>C:/Users/Haitao/Projects/OpenCV/modules/highgui/src/precomp.hpp</ForcedIncludeFiles>
+      <ForcedIncludeFiles>../../../modules/highgui/src/precomp.hpp</ForcedIncludeFiles>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>C:/Users/Haitao/Projects/OpenCV/modules/highgui/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile>../../../modules/highgui/src/precomp.hpp</PrecompiledHeaderFile>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>_WINRT_DLL;WP8;_WP8;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;HAVE_WEBP;HIGHGUI_EXPORTS;CMAKE_INTDIR="Release";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;HAVE_WEBP;HIGHGUI_EXPORTS;CMAKE_INTDIR="Release";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>_WINRT_DLL;WP8;_WP8;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;HAVE_WEBP;HIGHGUI_EXPORTS;CMAKE_INTDIR=\"Release\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/highgui/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/build/modules/highgui;C:/Users/Haitao/Projects/OpenCV/modules/highgui/src;C:/Users/Haitao/Projects/OpenCV/modules/highgui/test;C:/Users/Haitao/Projects/OpenCV/3rdparty/libjasper;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/libtiff;C:/Users/Haitao/Projects/OpenCV/3rdparty/libtiff;C:/Users/Haitao/Projects/OpenCV/3rdparty/libpng;C:/Users/Haitao/Projects/OpenCV/3rdparty/libwebp;C:/Users/Haitao/Projects/OpenCV/3rdparty/libjpeg;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/build;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Half;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Iex;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/IlmThread;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Imath;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/IlmImf;C:/Users/Haitao/Projects/OpenCV/3rdparty/include;C:/Users/Haitao/Projects/OpenCV/3rdparty/include/ffmpeg_;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;HAVE_WEBP;HIGHGUI_EXPORTS;CMAKE_INTDIR=\"Release\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../../modules/highgui/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../modules/highgui;../../../modules/highgui/src;../../../modules/highgui/test;../../../3rdparty/libjasper;../../3rdparty/libtiff;../../../3rdparty/libtiff;../../../3rdparty/libpng;../../../3rdparty/libwebp;../../../3rdparty/libjpeg;../../3rdparty/zlib;../../../3rdparty/zlib;../../;../../../3rdparty/openexr/Half;../../../3rdparty/openexr/Iex;../../../3rdparty/openexr/IlmThread;../../../3rdparty/openexr/Imath;../../../3rdparty/openexr/IlmImf;../../../3rdparty/include;../../../3rdparty/include/ffmpeg_;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/modules/highgui/perf;C:/Users/Haitao/Projects/OpenCV/modules/highgui/include;C:/Users/Haitao/Projects/OpenCV/modules/imgproc/include;C:/Users/Haitao/Projects/OpenCV/modules/core/include;C:/Users/Haitao/Projects/OpenCV/modules/ts/include;C:/Users/Haitao/Projects/OpenCV/build/modules/highgui;C:/Users/Haitao/Projects/OpenCV/modules/highgui/src;C:/Users/Haitao/Projects/OpenCV/modules/highgui/test;C:/Users/Haitao/Projects/OpenCV/3rdparty/libjasper;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/libtiff;C:/Users/Haitao/Projects/OpenCV/3rdparty/libtiff;C:/Users/Haitao/Projects/OpenCV/3rdparty/libpng;C:/Users/Haitao/Projects/OpenCV/3rdparty/libwebp;C:/Users/Haitao/Projects/OpenCV/3rdparty/libjpeg;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/build;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Half;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Iex;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/IlmThread;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Imath;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/IlmImf;C:/Users/Haitao/Projects/OpenCV/3rdparty/include;C:/Users/Haitao/Projects/OpenCV/3rdparty/include/ffmpeg_;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../modules/highgui/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../modules/highgui;../../../modules/highgui/src;../../../modules/highgui/test;../../../3rdparty/libjasper;../../3rdparty/libtiff;../../../3rdparty/libtiff;../../../3rdparty/libpng;../../../3rdparty/libwebp;../../../3rdparty/libjpeg;../../3rdparty/zlib;../../../3rdparty/zlib;../../;../../../3rdparty/openexr/Half;../../../3rdparty/openexr/Iex;../../../3rdparty/openexr/IlmThread;../../../3rdparty/openexr/Imath;../../../3rdparty/openexr/IlmImf;../../../3rdparty/include;../../../3rdparty/include/ffmpeg_;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -155,11 +155,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>Copying C:/Users/Haitao/Projects/OpenCV/3rdparty/ffmpeg/opencv_ffmpeg.dll to the output directory</Message>
+      <Message>Copying ../../../3rdparty/ffmpeg/opencv_ffmpeg.dll to the output directory</Message>
       <Command>setlocal
-d:\bin\cmake\bin\cmake.exe -E copy C:/Users/Haitao/Projects/OpenCV/3rdparty/ffmpeg/opencv_ffmpeg.dll C:/Users/Haitao/Projects/OpenCV/build/bin/Release/opencv_ffmpeg300.dll
+d:\bin\cmake\bin\cmake.exe -E copy ../../../3rdparty/ffmpeg/opencv_ffmpeg.dll ../../bin/Release/opencv_ffmpeg300.dll
 if %errorlevel% neq 0 goto :cmEnd
-d:\bin\cmake\bin\cmake.exe -E copy C:/Users/Haitao/Projects/OpenCV/3rdparty/ffmpeg/opencv_ffmpeg.dll C:/Users/Haitao/Projects/OpenCV/build/bin/Debug/opencv_ffmpeg300.dll
+d:\bin\cmake\bin\cmake.exe -E copy ../../../3rdparty/ffmpeg/opencv_ffmpeg.dll ../../bin/Debug/opencv_ffmpeg300.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -171,11 +171,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <Link>
       <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>..\..\lib\Release\opencv_core300.lib;..\..\lib\Release\opencv_imgproc300.lib;..\..\3rdparty\lib\Release\zlib.lib;..\..\3rdparty\lib\Release\libjpeg.lib;..\..\3rdparty\lib\Release\libwebp.lib;..\..\3rdparty\lib\Release\libpng.lib;..\..\3rdparty\lib\Release\libtiff.lib;..\..\3rdparty\lib\Release\libjasper.lib;..\..\3rdparty\lib\Release\IlmImf.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;vfw32.lib;..\..\lib\Release\opencv_core300.lib;..\..\3rdparty\lib\Release\zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/Users/Haitao/Projects/OpenCV/3rdparty/lib;C:/Users/Haitao/Projects/OpenCV/3rdparty/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../../../3rdparty/lib;../../../3rdparty/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>atlthunk.lib;atlsd.lib;libcmt.lib</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Haitao/Projects/OpenCV/build/lib/Release/opencv_highgui300.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Haitao/Projects/OpenCV/build/bin/Release/opencv_highgui300.pdb</ProgramDataBaseFile>
+      <ImportLibrary>../../lib/Release/opencv_highgui300.lib</ImportLibrary>
+      <ProgramDataBaseFile>../../bin/Release/opencv_highgui300.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -186,7 +186,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\modules\highgui\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/highgui/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule ../../../modules/highgui/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">setlocal
 d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\highgui\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
@@ -196,10 +196,10 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/highgui/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\highgui\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\highgui\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../../modules/highgui/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\highgui\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\highgui\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\highgui\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule C:/Users/Haitao/Projects/OpenCV/modules/highgui/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule ../../../modules/highgui/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">setlocal
 d:\bin\cmake\bin\cmake.exe -H../../.. -B../.. --check-stamp-file C:\Users\Haitao\Projects\OpenCV\build\modules\highgui\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
@@ -209,7 +209,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/highgui/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\highgui\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\highgui\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../../modules/highgui/CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\highgui\CMakeLists.txt;C:\Users\Haitao\Projects\OpenCV\modules\highgui\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\highgui\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
     </CustomBuild>
@@ -264,37 +264,37 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="..\..\..\modules\highgui\src\rgbe.cpp" />
     <ClCompile Include="opencv_highgui_pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/highgui/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../../modules/highgui/src/precomp.hpp</PrecompiledHeaderFile>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/modules/highgui/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../../modules/highgui/src/precomp.hpp</PrecompiledHeaderFile>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/3rdparty/openexr/IlmImf.vcxproj">
+    <ProjectReference Include="../../3rdparty/openexr/IlmImf.vcxproj">
       <Project>BA7A0C80-9798-4C6C-A67A-5100541C726C</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/3rdparty/libjasper/libjasper.vcxproj">
+    <ProjectReference Include="../../3rdparty/libjasper/libjasper.vcxproj">
       <Project>F034A4B3-9AD6-4E58-B8C9-A0B6EC9A84C1</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/3rdparty/libjpeg/libjpeg.vcxproj">
+    <ProjectReference Include="../../3rdparty/libjpeg/libjpeg.vcxproj">
       <Project>DD6F601A-0C29-46E1-8D5C-13CC7C53E996</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/3rdparty/libpng/libpng.vcxproj">
+    <ProjectReference Include="../../3rdparty/libpng/libpng.vcxproj">
       <Project>4069252C-1F8E-4F30-B01A-89763D74D953</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/3rdparty/libtiff/libtiff.vcxproj">
+    <ProjectReference Include="../../3rdparty/libtiff/libtiff.vcxproj">
       <Project>CD395AE8-B0A8-4092-A447-CF7CB53ECAFA</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/3rdparty/libwebp/libwebp.vcxproj">
+    <ProjectReference Include="../../3rdparty/libwebp/libwebp.vcxproj">
       <Project>2872207D-29AE-4D48-A2FF-04AC72913EFE</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/core/opencv_core.vcxproj">
+    <ProjectReference Include="../../modules/core/opencv_core.vcxproj">
       <Project>5B9B9E5F-EC6F-4E37-8F3E-DED15CFFAEAF</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/modules/imgproc/opencv_imgproc.vcxproj">
+    <ProjectReference Include="../../modules/imgproc/opencv_imgproc.vcxproj">
       <Project>16EF83FC-A100-4D69-8D52-5D0C8BBF573B</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/3rdparty/zlib/zlib.vcxproj">
+    <ProjectReference Include="../../3rdparty/zlib/zlib.vcxproj">
       <Project>DD290888-01D7-4DFB-82AA-C29D2908BF62</Project>
     </ProjectReference>
   </ItemGroup>

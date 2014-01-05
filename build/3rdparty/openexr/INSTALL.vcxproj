@@ -42,7 +42,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/IlmImf;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Imath;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/IlmThread;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Iex;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Half;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/openexr;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../3rdparty/openexr/IlmImf;../../../3rdparty/openexr/Imath;../../../3rdparty/openexr/IlmThread;../../../3rdparty/openexr/Iex;../../../3rdparty/openexr/Half;../../3rdparty/zlib;../../../3rdparty/zlib;../../3rdparty/openexr;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -64,7 +64,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <Midl>
-      <AdditionalIncludeDirectories>C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/IlmImf;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Imath;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/IlmThread;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Iex;C:/Users/Haitao/Projects/OpenCV/3rdparty/openexr/Half;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/3rdparty/zlib;C:/Users/Haitao/Projects/OpenCV/build/3rdparty/openexr;C:/Users/Haitao/Projects/OpenCV/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../3rdparty/openexr/IlmImf;../../../3rdparty/openexr/Imath;../../../3rdparty/openexr/IlmThread;../../../3rdparty/openexr/Iex;../../../3rdparty/openexr/Half;../../3rdparty/zlib;../../../3rdparty/zlib;../../3rdparty/openexr;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -96,7 +96,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/7b89ff5f7bf82d7fc678d0285f92149e/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../CMakeFiles/7b89ff5f7bf82d7fc678d0285f92149e/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\3rdparty\openexr\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'"> </Message>
@@ -109,13 +109,13 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:/Users/Haitao/Projects/OpenCV/build/CMakeFiles/7b89ff5f7bf82d7fc678d0285f92149e/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../CMakeFiles/7b89ff5f7bf82d7fc678d0285f92149e/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\3rdparty\openexr\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Users/Haitao/Projects/OpenCV/build/3rdparty/openexr/ALL_BUILD.vcxproj">
+    <ProjectReference Include="../../3rdparty/openexr/ALL_BUILD.vcxproj">
       <Project>239D2299-A421-4E1C-AFFA-BDD8937B7C69</Project>
     </ProjectReference>
   </ItemGroup>

@@ -5,9 +5,17 @@
       <Configuration>Debug</Configuration>
       <Platform>ARM</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Release|ARM">
       <Configuration>Release</Configuration>
       <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -29,6 +37,12 @@
     <PlatformToolset>v110_wp80</PlatformToolset>
     <IgnoreImportLibrary>false</IgnoreImportLibrary>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
@@ -37,6 +51,12 @@
     <IgnoreImportLibrary>false</IgnoreImportLibrary>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -52,15 +72,23 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\bin\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">opencv_core.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">opencv_core300d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opencv_core300d</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\bin\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">opencv_core.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">opencv_core300</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opencv_core300</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -155,7 +183,126 @@
       <TreatOutputAsContent />
     </CustomBuild>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../../modules/core/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../modules/core;../../../modules/core/src;../../../modules/core/test;../../../3rdparty/include/opencl/1.2;../../3rdparty/zlib;../../../3rdparty/zlib;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForcedIncludeFiles>../../../modules/core/src/precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>../../../modules/core/src/precomp.hpp</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WINAPI_FAMILY==WINAPI_FAMILY_PHONE_APP;WIN32;_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR="Debug";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR=\"Debug\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../../modules/core/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../modules/core;../../../modules/core/src;../../../modules/core/test;../../../3rdparty/include/opencl/1.2;../../3rdparty/zlib;../../../3rdparty/zlib;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>../../../modules/core/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../modules/core;../../../modules/core/src;../../../modules/core/test;../../../3rdparty/include/opencl/1.2;../../3rdparty/zlib;../../../3rdparty/zlib;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>..\..\3rdparty\lib\Debug\zlibd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>../../lib/Debug/opencv_core300d.lib</ImportLibrary>
+      <ProgramDataBaseFile>../../bin/Debug/opencv_core300d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <CustomBuild>
+      <LinkObjects>
+      </LinkObjects>
+    </CustomBuild>
+    <CustomBuild>
+      <TreatOutputAsContent>
+      </TreatOutputAsContent>
+    </CustomBuild>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../../modules/core/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../modules/core;../../../modules/core/src;../../../modules/core/test;../../../3rdparty/include/opencl/1.2;../../3rdparty/zlib;../../../3rdparty/zlib;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForcedIncludeFiles>../../../modules/core/src/precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>../../../modules/core/src/precomp.hpp</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR="Release";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR=\"Release\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../../modules/core/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../modules/core;../../../modules/core/src;../../../modules/core/test;../../../3rdparty/include/opencl/1.2;../../3rdparty/zlib;../../../3rdparty/zlib;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>../../../modules/core/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../modules/core;../../../modules/core/src;../../../modules/core/test;../../../3rdparty/include/opencl/1.2;../../3rdparty/zlib;../../../3rdparty/zlib;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>..\..\3rdparty\lib\Release\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>../../lib/Release/opencv_core300.lib</ImportLibrary>
+      <ProgramDataBaseFile>../../bin/Release/opencv_core300.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <CompileAsWinRT>false</CompileAsWinRT>
       <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
@@ -212,6 +359,7 @@
   <ItemGroup>
     <CustomBuild Include="..\..\CMakeFiles\da6dbf5fb95b1c722ec6e5a56fa477ac\opencl_kernels.cpp.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Generating opencl_kernels.cpp, opencl_kernels.hpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating opencl_kernels.cpp, opencl_kernels.hpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">setlocal
           d:\bin\cmake\bin\cmake.exe -DMODULE_NAME="core" -DCL_DIR="../../../modules/core/src/opencl" -DOUTPUT="../../modules/core/opencl_kernels.cpp" -P ../../../cmake/cl2cpp.cmake
 if %errorlevel% neq 0 goto :cmEnd
@@ -221,10 +369,23 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+          d:\bin\cmake\bin\cmake.exe -DMODULE_NAME="core" -DCL_DIR="../../../modules/core/src/opencl" -DOUTPUT="../../modules/core/opencl_kernels.cpp" -P ../../../cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../CMakeFiles/da6dbf5fb95b1c722ec6e5a56fa477ac/opencl_kernels.cpp.rule;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\arithm.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\convert.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\copymakeborder.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\copyset.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\flip.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\inrange.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\lut.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\mixchannels.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\mulspectrums.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\reduce.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\set_identity.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\split_merge.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\transpose.cl;C:\Users\Haitao\Projects\OpenCV\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../CMakeFiles/da6dbf5fb95b1c722ec6e5a56fa477ac/opencl_kernels.cpp.rule;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\arithm.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\convert.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\copymakeborder.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\copyset.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\flip.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\inrange.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\lut.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\mixchannels.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\mulspectrums.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\reduce.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\set_identity.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\split_merge.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\transpose.cl;C:\Users\Haitao\Projects\OpenCV\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\core\opencl_kernels.cpp;C:\Users\Haitao\Projects\OpenCV\build\modules\core\opencl_kernels.hpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Haitao\Projects\OpenCV\build\modules\core\opencl_kernels.cpp;C:\Users\Haitao\Projects\OpenCV\build\modules\core\opencl_kernels.hpp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Generating opencl_kernels.cpp, opencl_kernels.hpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating opencl_kernels.cpp, opencl_kernels.hpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">setlocal
 d:\bin\cmake\bin\cmake.exe -DMODULE_NAME="core" -DCL_DIR="../../../modules/core/src/opencl" -DOUTPUT="../../modules/core/opencl_kernels.cpp" -P ../../../cmake/cl2cpp.cmake
 if %errorlevel% neq 0 goto :cmEnd
@@ -234,9 +395,21 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+d:\bin\cmake\bin\cmake.exe -DMODULE_NAME="core" -DCL_DIR="../../../modules/core/src/opencl" -DOUTPUT="../../modules/core/opencl_kernels.cpp" -P ../../../cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../CMakeFiles/da6dbf5fb95b1c722ec6e5a56fa477ac/opencl_kernels.cpp.rule;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\arithm.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\convert.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\copymakeborder.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\copyset.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\flip.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\inrange.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\lut.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\mixchannels.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\mulspectrums.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\reduce.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\set_identity.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\split_merge.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\transpose.cl;C:\Users\Haitao\Projects\OpenCV\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../CMakeFiles/da6dbf5fb95b1c722ec6e5a56fa477ac/opencl_kernels.cpp.rule;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\arithm.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\convert.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\copymakeborder.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\copyset.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\flip.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\inrange.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\lut.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\mixchannels.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\mulspectrums.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\reduce.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\set_identity.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\split_merge.cl;C:\Users\Haitao\Projects\OpenCV\modules\core\src\opencl\transpose.cl;C:\Users\Haitao\Projects\OpenCV\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\modules\core\opencl_kernels.cpp;C:\Users\Haitao\Projects\OpenCV\build\modules\core\opencl_kernels.hpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Haitao\Projects\OpenCV\build\modules\core\opencl_kernels.cpp;C:\Users\Haitao\Projects\OpenCV\build\modules\core\opencl_kernels.hpp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -352,9 +525,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="opencl_kernels.cpp" />
     <ClCompile Include="opencv_core_pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">../../../modules/core/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../modules/core/src/precomp.hpp</PrecompiledHeaderFile>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">../../../modules/core/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../modules/core/src/precomp.hpp</PrecompiledHeaderFile>
     </ClCompile>
     <None Include="version_string.inc" />
     <None Include="..\..\..\modules\core\src\opencl\arithm.cl" />

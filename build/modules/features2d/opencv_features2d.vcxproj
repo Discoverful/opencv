@@ -58,7 +58,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <GenerateManifest>false</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\bin\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">..\..\bin\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">opencv_features2d.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">opencv_features2d300d</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opencv_features2d300d</TargetName>
@@ -68,7 +68,7 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\bin\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">..\..\bin\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">opencv_features2d.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">opencv_features2d300</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opencv_features2d300</TargetName>
@@ -230,7 +230,7 @@
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>..\..\lib\Release\opencv_core300.lib;..\..\lib\Release\opencv_flann300.lib;..\..\lib\Release\opencv_imgproc300.lib;..\..\lib\Release\opencv_highgui300.lib;..\..\lib\Release\opencv_imgproc300.lib;..\..\lib\Release\opencv_core300.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\..\lib\Release\opencv_core300.lib;..\..\lib\Release\opencv_flann300.lib;..\..\lib\Release\opencv_imgproc300.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libc</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>../../lib/Release/opencv_features2d300.lib</ImportLibrary>

@@ -58,7 +58,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <GenerateManifest>false</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\bin\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">..\..\bin\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">opencv_calib3d.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">opencv_calib3d300d</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opencv_calib3d300d</TargetName>
@@ -68,7 +68,7 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\bin\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">..\..\bin\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">opencv_calib3d.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">opencv_calib3d300</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opencv_calib3d300</TargetName>
@@ -82,6 +82,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
       <PreprocessorDefinitions>_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR="Debug";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAsWinRT>false</CompileAsWinRT>
       <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
       <AdditionalIncludeDirectories>../../../modules/calib3d/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../../modules/calib3d/include;../../../modules/features2d/include;../../../modules/flann/include;../../modules/calib3d;../../../modules/calib3d/src;../../../modules/calib3d/test;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
@@ -98,7 +99,6 @@
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>../../../modules/calib3d/src/precomp.hpp</PrecompiledHeaderFile>
-      <CompileAsWinRT>false</CompileAsWinRT>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
       <WarningLevel>Level4</WarningLevel>
     </ClCompile>
@@ -121,12 +121,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalOptions>/debug %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>..\..\lib\Debug\opencv_core300d.lib;..\..\lib\Debug\opencv_flann300d.lib;..\..\lib\Debug\opencv_imgproc300d.lib;..\..\lib\Debug\opencv_highgui300d.lib;..\..\lib\Debug\opencv_features2d300d.lib;..\..\lib\Debug\opencv_flann300d.lib;..\..\lib\Debug\opencv_highgui300d.lib;..\..\lib\Debug\opencv_imgproc300d.lib;..\..\lib\Debug\opencv_core300d.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libc</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>../../lib/Debug/opencv_calib3d300d.lib</ImportLibrary>
       <ProgramDataBaseFile>../../bin/Debug/opencv_calib3d300d.pdb</ProgramDataBaseFile>
-      <Version>
-      </Version>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -183,7 +180,6 @@
     <ClCompile>
       <PreprocessorDefinitions>_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR="Release";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
       <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
       <AdditionalIncludeDirectories>../../../modules/calib3d/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../../modules/calib3d/include;../../../modules/features2d/include;../../../modules/flann/include;../../modules/calib3d;../../../modules/calib3d/src;../../../modules/calib3d/test;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
@@ -201,6 +197,7 @@
       <PrecompiledHeaderFile>../../../modules/calib3d/src/precomp.hpp</PrecompiledHeaderFile>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
       <WarningLevel>Level4</WarningLevel>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
@@ -220,9 +217,7 @@
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>..\..\lib\Release\opencv_core300.lib;..\..\lib\Release\opencv_flann300.lib;..\..\lib\Release\opencv_imgproc300.lib;..\..\lib\Release\opencv_highgui300.lib;..\..\lib\Release\opencv_features2d300.lib;..\..\lib\Release\opencv_flann300.lib;..\..\lib\Release\opencv_highgui300.lib;..\..\lib\Release\opencv_imgproc300.lib;..\..\lib\Release\opencv_core300.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>..\..\lib\Release\opencv_core300.lib;..\..\lib\Release\opencv_flann300.lib;..\..\lib\Release\opencv_imgproc300.lib;..\..\lib\Release\opencv_features2d300.lib</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>libc</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>../../lib/Release/opencv_calib3d300.lib</ImportLibrary>

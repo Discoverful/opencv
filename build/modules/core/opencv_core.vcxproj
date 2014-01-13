@@ -69,7 +69,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <GenerateManifest>false</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\bin\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">..\..\bin\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">opencv_core.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">opencv_core300d</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opencv_core300d</TargetName>
@@ -79,7 +79,7 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\bin\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">..\..\bin\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">opencv_core.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">opencv_core300</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opencv_core300</TargetName>
@@ -250,6 +250,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <ClCompile>
+      <PreprocessorDefinitions>_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <CompileAsWinRT>false</CompileAsWinRT>
       <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
       <AdditionalIncludeDirectories>../../../modules/core/perf;../../../modules/highgui/include;../../../modules/imgproc/include;../../../modules/core/include;../../../modules/ts/include;../../modules/core;../../../modules/core/src;../../../modules/core/test;../../../3rdparty/include/opencl/1.2;../../3rdparty/zlib;../../../3rdparty/zlib;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -269,7 +270,7 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR="Release";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WINAPI_FAMILY==WINAPI_FAMILY_PHONE_APP;WIN32;_USRDLL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;OPENCV_NOSTL;_VARIADIC_MAX=10;WIN32;_UNICODE;__OPENCV_BUILD=1;CMAKE_INTDIR="Release";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>

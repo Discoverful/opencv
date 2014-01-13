@@ -58,7 +58,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <GenerateManifest>false</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Haitao\Projects\OpenCV\build\bin\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">..\..\bin\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">opencv_imgproc.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">opencv_imgproc300d</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opencv_imgproc300d</TargetName>
@@ -68,7 +68,7 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Haitao\Projects\OpenCV\build\bin\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">..\..\bin\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">opencv_imgproc.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">opencv_imgproc300</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opencv_imgproc300</TargetName>
